@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylepage/style.css">
+    <link rel="shortcut icon" href="imagepage/iconPage.ico" type="image/x-icon">
+    <title>Gamu</title>
+</head>
+<body class="bodyPage">
+    <div class="containerTypeGames">
+        <p class="untitle font1"> recomendados </p>
+        <div onpointerenter="onTouchMouse('cg1')" onpointerleave="unOnTouchMouse('cg1')" id="cg1" class="cotainerGames c1">
+            <div id="gameScreen" class="gameScreen">
+                <input id="gameImage" onclick="location.href = 'https:/'+'/poki.com';" class="imageGame" type="image" src="https://a.poki-cdn.com/cdn-cgi/image/quality=78,width=1200,height=630,f=png/opengraph/71/categories/online-1200x630.png">
+                <p id="gameTitle" class="titleGame font1"> poki vários jogos </p>
+            </div>
+        </div>
+
+        <p id="GameTitleCont" class="untitle ut2 font1"> jogos </p>
+        <div id="cg2" onpointerenter="onTouchMouse('cg2')" onpointerleave="unOnTouchMouse('cg2')" class="cotainerGames c2">
+            <div id="gameScreen2" class="gameScreen">
+                <input id="gameImage2" onclick="location.href = 'https:/'+'/snokido.com';" class="imageGame" type="image" src="https://www.snokido.com/images/snokido-fb.png">
+                <p id="gameTitle2" class="titleGame font1"> snokido jogos </p>
+            </div>
+        </div>
+
+        <p class="untitle ut3 font1"> jogos de fps </p>
+        <div id="cg3" onpointerenter="onTouchMouse('cg3')" onpointerleave="unOnTouchMouse('cg3')" class="cotainerGames c3">
+            <div id="gameScreen3" class="gameScreen">
+                <input id="gameImage3" onclick="location.href = 'https:/'+'/crazygames.com';" class="imageGame" type="image" src="https://imgs.crazygames.com/crazygames/share.png?metadata=none&width=1200&height=630&fit=crop">
+                <p id="gameTitle3" class="titleGame font1"> crazy games jogos  </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="BarTools">
+        <input class="icon" type="image" onclick="location.href=''" src="imagepage/iconPage.ico">
+    </div>
+</body>
+<script src="scriptpage/script.js"></script>
+</html>
