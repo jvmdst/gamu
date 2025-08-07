@@ -140,7 +140,7 @@ function loopUpdateGame3(){
     //definir propiedades
     imageGame3.src = localInfo[0];
     titleGame3.textContent = localInfo[1];
-    imageGame3.setAttribute('onclick', "location.href ='index.html/view.html?id="+localInfo[2]+"'")
+    imageGame3.setAttribute('onclick', "location.href ='/view.html?id="+localInfo[2]+"'")
     document.getElementById('cg3').append(newGame3)
     if(x3 >= 2){
         x3--
