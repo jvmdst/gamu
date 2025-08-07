@@ -85,7 +85,7 @@ function loopUpdateGame(){
     //definir propiedades
     imageGame.src = localInfo[0];
     titleGame.textContent = localInfo[1];
-    imageGame.setAttribute('onclick', "location.href ='gamu/view.html?id="+localInfo[2]+"'")
+    imageGame.setAttribute('onclick', "location.href ='view.html?id="+localInfo[2]+"'")
     document.getElementById('cg1').append(newGame)
     if(x >= 2){
         x--
@@ -111,7 +111,7 @@ function loopUpdateGame2(){
     //definir propiedades
     imageGame2.src = localInfo[0];
     titleGame2.textContent = localInfo[1];
-    imageGame2.setAttribute('onclick', "location.href ='gamu/view.html?id="+localInfo[2]+"'")
+    imageGame2.setAttribute('onclick', "location.href ='view.html?id="+localInfo[2]+"'")
     document.getElementById('cg2').append(newGame2)
     if(x2 >= 2){
         x2--
@@ -140,7 +140,7 @@ function loopUpdateGame3(){
     //definir propiedades
     imageGame3.src = localInfo[0];
     titleGame3.textContent = localInfo[1];
-    imageGame3.setAttribute('onclick', "location.href ='/view.html?id="+localInfo[2]+"'")
+    imageGame3.setAttribute('onclick', "location.href ='view.html?id="+localInfo[2]+"'")
     document.getElementById('cg3').append(newGame3)
     if(x3 >= 2){
         x3--
