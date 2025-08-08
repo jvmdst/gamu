@@ -15,7 +15,7 @@
 
 .BarTools {
     position: fixed;
-    width: 10vh;
+    width: 5%;
     height: 60%;
     left: 1vh;
     top: 1vh;
@@ -33,6 +33,13 @@
     border: 1px solid white;
     border-top-right-radius: 10px; border-top-left-radius: 10px;
     display: flex;
+}
+
+.xpViewText {
+    color: white;
+    position: absolute;
+    left: 1%;
+    font-size: 150%;
 }
 
 .c1 {
@@ -125,11 +132,11 @@
 }
 
 .b2 {
-    left:8%;
+    left:9%;
 }
 
 .b3 {
-    left: 15.3%;
+    left: 17.3%;
 }
 
 .untitle {

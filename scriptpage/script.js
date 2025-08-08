@@ -1,14 +1,31 @@
+//pegar informações salvas
+
+const localSave_1938 = localStorage.getItem('Key_10923', 'localSave-2x32sz');
+
+//verificação de informações salvas
+
+if(localSave_1938 == "null" || localSave_1938 == null){localStorage.setItem('Key_10923', 0)};
+
+function UpdateNewRecord(){
+    localStorage.setItem('Key_10923', Number(localStorage.getItem('Key_10923', 'localSave-2x32sz')) + 2);
+    const localSave_1938 = localStorage.getItem('Key_10923', 'localSave-2x32sz');
+    document.getElementById('LevelShowText').textContent = 'xp:'+localSave_1938;
+    setTimeout(UpdateNewRecord, '6000');
+}
+UpdateNewRecord();
+
+//atualizar alguns textos
+document.getElementById('LevelShowText').textContent = 'xp:'+localSave_1938;
+
 const templateGame = document.getElementById('gameScreen');
 const templateGame2 = document.getElementById('gameScreen2');
 const templateGame3 = document.getElementById('gameScreen3');
 const GameTitleCont = document.getElementById('GameTitleCont');
 
-function muteSom(){
-    document.getElementById('musicBackground').remove();
-}
 //sarvar jogos publicado em uma ilha
 
 let cg1Cloud = [
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOihOMFmw-9CxDqekl_hDLs0AoqWYujuOfEg&s<>worms zone<>89nJ23",
     "https://watchdocumentaries.com/wp-content/uploads/smash-karts-game.jpg<>smash karts<>2ax785",
     "https://imgs.crazygames.com/games/krunker-io/cover-1591336739727.png?metadata=none&quality=100&width=1200&height=630&fit=crop<>krunker<>3op093",
     "https://imgs.crazygames.com/diepio/20230629173952/diepio-cover?metadata=none&quality=100&width=1200&height=630&fit=crop<>diep game io<>7Iox23",
@@ -22,7 +39,7 @@ let cg2Cloud = [
     "https://imgs.crazygames.com/games/ev-io/cover_16x9-1702303918732.png?metadata=none&quality=100&width=1200&height=630&fit=crop<>ev fps game<>72Xi23",
     "https://imgs.crazygames.com/games/krunker-io/cover-1591336739727.png?metadata=none&quality=100&width=1200&height=630&fit=crop<>krunker<>3op093",
     "https://imgs.crazygames.com/diepio/20230629173952/diepio-cover?metadata=none&quality=100&width=1200&height=630&fit=crop<>diep game io<>7Iox23",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOihOMFmw-9CxDqekl_hDLs0AoqWYujuOfEg&s<>wormszone<>89nJ23",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOihOMFmw-9CxDqekl_hDLs0AoqWYujuOfEg&s<>worms zone<>89nJ23",
     "https://spaces.kiwigames.io/static/games/images/kirka.io-play-online.png<>kirka fps game<>27ixo20",
     "https://img.gamepix.com/games/nightpoint-io/cover/nightpoint-io.png?w=400&ar=16:10<>night point<>62ki309",
     "https://img.itch.zone/aW1hZ2UvMjY3Mjk5MS8xNTkyOTg5OS5wbmc=/original/ftE9oi.png<>infinite chef<>789is2",
@@ -59,7 +76,6 @@ function unOnTouchMouse(idElement){
 let x = cg1Cloud.length;
 let x2 = cg2Cloud.length;
 let x3 = cg3Cloud.length;
-GameTitleCont.textContent = cg2Cloud.length+' jogos';
 
 let y = 0;
 let y2 = 0;
@@ -92,7 +108,7 @@ function loopUpdateGame(){
         y++
         i += 42;
         setTimeout(loopUpdateGame, '200');
-    }else{setTimeout(clearConsole, '1000')}
+    }else{setTimeout(clearConsole, '100000')}
 }
 
 setTimeout(loopUpdateGame, '100');
@@ -118,7 +134,7 @@ function loopUpdateGame2(){
         y2++
         i2 += 42;
         setTimeout(loopUpdateGame2, '200');
-    }else{setTimeout(clearConsole, '1000');}
+    }else{setTimeout(clearConsole, '100000');}
 }
 setTimeout(loopUpdateGame2, '100');
 
@@ -147,7 +163,7 @@ function loopUpdateGame3(){
         y3++
         i3 += 42;
         setTimeout(loopUpdateGame3, '200');
-    }else{setTimeout(clearConsole, '1000');}
+    }else{setTimeout(clearConsole, '100000');}
 }
 setTimeout(loopUpdateGame3, '100');
 
