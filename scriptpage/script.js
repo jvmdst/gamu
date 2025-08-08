@@ -10,7 +10,7 @@ function UpdateNewRecord(){
     localStorage.setItem('Key_10923', Number(localStorage.getItem('Key_10923', 'localSave-2x32sz')) + 2);
     const localSave_1938 = localStorage.getItem('Key_10923', 'localSave-2x32sz');
     document.getElementById('LevelShowText').textContent = 'xp:'+localSave_1938;
-    setTimeout(UpdateNewRecord, '6000');
+    setTimeout(UpdateNewRecord, '500');
 }
 UpdateNewRecord();
 
