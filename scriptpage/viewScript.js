@@ -1,3 +1,18 @@
+//pegar informações salvasS
+const localSave_1938 = localStorage.getItem('Key_10923', 'localSave-2x32sz');
+
+//verificação de informações salvas
+
+if(localSave_1938 == "null" || localSave_1938 == null){localStorage.setItem('Key_10923', 0)};
+
+function UpdateNewRecord(){
+    localStorage.setItem('Key_10923', Number(localStorage.getItem('Key_10923', 'localSave-2x32sz')) + 50);
+    const localSave_1938 = localStorage.getItem('Key_10923', 'localSave-2x32sz');
+    document.getElementById('gmViewTextGameView').textContent = 'gm coin:'+localSave_1938;
+    setTimeout(UpdateNewRecord, "1000"); //se você esta vendo este códego me desculpe mais não permitimos isto saia se  sabermos que você esta mexendo ou roubando códego nós vamos lhe abanir
+}
+UpdateNewRecord();
+
 const searchParams = new URLSearchParams(location.search);
 const id = searchParams.get('id');
 const screenGame = document.getElementById('GameFrameScreen');
@@ -63,4 +78,6 @@ if(id == null){
     if(id == '10kj45'){screenGame.src = 'https://classic.minecraft.net/';};
     if(id == '28lid3'){screenGame.src = 'https://2048game.com/pt/';};
     if(id == '20930lo'){screenGame.src = 'https://sllides.com/';};
+    if(id == '0liJsok'){screenGame.src = 'https://skribbl.io/';};
+    if(id == 'liIjs15'){screenGame.src = 'https://slowroads.io/';};
 }if(id ===''){location.href='index.html'}

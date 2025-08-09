@@ -42,6 +42,26 @@
     font-size: 150%;
 }
 
+.xpViewTextStore {
+    color: white;
+    position: absolute;
+    left: 7%;
+    top: -7%;
+    font-size: 250%;
+    background-color: rgb(36, 36, 36);
+    border-radius: 10px;
+}
+
+.gmViewTextGameView {
+    color: white;
+    position: absolute;
+    left: 7%;
+    top: 80%;
+    font-size: 250%;
+    background-color: rgb(36, 36, 36);
+    border-radius: 10px;    
+}
+
 .c1 {
     top: 15%;
 }
@@ -81,6 +101,11 @@
     width: 10vh;
     height: 9.5%;
     position: fixed;
+}
+
+.iconStore {
+    top: 10%;
+    filter: invert(150%);
 }
 
 .muteMusic {
