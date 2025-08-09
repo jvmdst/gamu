@@ -1,3 +1,11 @@
+//verificar o dispositivo
+
+const userAgent = navigator.userAgent.toLowerCase();
+const isAndroid = userAgent.includes('android');
+const isIOS = /(iphone|ipad|ipod)/.test(userAgent);
+console.log(userAgent+'local_0288402883002:'+isAndroid+' '+isIOS);
+if(isIOS == true || isAndroid == true){if(confirm('desculpe mais foi verificado que você está usando o disppositivo online só falando que não tem suporte a tamanho de telas pequenas como os de celulares se ainda quer jogar aperte "ok"') === false){window.location.href = 'https://google.com';};}
+
 //pegar informações salvasS
 const localSave_1938 = localStorage.getItem('Key_10923', 'localSave-2x32sz');
 
@@ -131,7 +139,7 @@ function loopUpdateGame2(){
     //definir propiedades
     imageGame2.src = localInfo[0];
     titleGame2.textContent = localInfo[1];
-    imageGame2.setAttribute('onclick', "location.href ='view.html?id="+localInfo[2]+"'")
+    imageGame2.setAttribute('onclick', "if(confirm('quer entrar no "+localInfo[1]+"')){location.href ='view.html?id="+localInfo[2]+"'}")
     document.getElementById('cg2').append(newGame2)
     if(x2 >= 2){
         x2--
