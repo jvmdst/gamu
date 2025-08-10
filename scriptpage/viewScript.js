@@ -107,6 +107,8 @@ document.addEventListener('keydown', function(event){
 
 //verificar o id do jogo e colocar o jogo no fullscreen
 
+let alertMobileSuport = 'desculpe mais o jogo selecionado não tem suporte a seu dispositivo :(';
+
 if(id == null){
     location.href='index.html';
 }else{
@@ -124,4 +126,6 @@ if(id == null){
     if(id == '20930lo'){screenGame.src = 'https://sllides.com/';};
     if(id == '0liJsok'){screenGame.src = 'https://skribbl.io/';};
     if(id == 'liIjs15'){screenGame.src = 'https://slowroads.io/';};
+    if(id == 'oiKmçp'){screenGame.src = 'https://www.stumbleguys.com/pt/play'; if(Mobile == true){alert(alertMobileSuport); window.location.href = 'index.html'}};
+    if(id == 'gaIroa'){screenGame.src = 'https://paperio.site/'; if(Mobile == true){alert(alertMobileSuport); window.location.href = 'index.html'}};
 }if(id ===''){location.href='index.html'}

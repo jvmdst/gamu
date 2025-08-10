@@ -85,6 +85,8 @@ let cg2Cloud = [
     "https://cdn2.fptshop.com.vn/unsafe/1920x0/filters:format(webp):quality(75)/2024_5_28_638525253085697115_minecraft-classic_.jpg<>minecraft classic<>10kj45",
     "https://skribbl.io/img/thumbnail.png<>skribbl<>0liJsok",
     "https://img.gamepix.com/games/slow-roads-io/cover/slow-roads-io.png?w=400&ar=16:10<>slow roads<>liIjs15",
+    "https://www.stumbleguys.com/og.jpg<>stumble guys - 📱❌ <>oiKmçp",
+    "https://imgs.crazygames.com/paper-io-2_16x9/20250214024143/paper-io-2_16x9-cover?metadata=none&quality=100&width=1200&height=630&fit=crop<>paper io - 📱❌ <>gaIroa",
 ];
 
 let cg3Cloud = [
