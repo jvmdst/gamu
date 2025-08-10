@@ -9,15 +9,16 @@
 </head>
 <body class="bodyPage">
     <p class="gmViewTextGameView font1" id="gmViewTextGameView"> xp: 0 </p>
-    <div class="barGame">
-        <input type="image" onclick="location.href = ''" class="botoesBarGame" src="imagepage/localIcons/refresh_123dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png">
-        <input type="image" onclick="location.href = 'index.html'" class="botoesBarGame b2" src="imagepage/localIcons/close_123dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png">
-        <input type="image" onclick="fullScreen()" class="botoesBarGame b3" src="imagepage/localIcons/fullscreen_103dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png">
+    <div id="BarOpitionsGame" class="barGame">
+        <input id="b1" type="image" onclick="location.href = ''" class="botoesBarGame" src="imagepage/localIcons/refresh_123dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png">
+        <input id="b2" type="image" onclick="location.href = 'index.html'" class="botoesBarGame b2" src="imagepage/localIcons/close_123dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png">
+        <input id="b3" type="image" onclick="fullScreen()" class="botoesBarGame b3" src="imagepage/localIcons/fullscreen_103dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png">
     </div>
     <hr class="hrGame">
     
-    <div class="BarTools">
-        <input class="icon" type="image" onclick="location.href='/index.html'" src="imagepage/iconPage.ico">
+    <div id="BarTools" class="BarTools">
+        <input id="icon1" class="icon" type="image" onclick="location.href='index.html'" src="imagepage/iconPage.ico">
+        <input id="icon2" class="iconStore icon" type="image" onclick="location.href='store.html'" src="imagepage/localIcons/shopping_cart_103dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png">
     </div>
     <iframe id="GameFrameScreen" class="GameFrameScreen" src="" allowfullscreen frameborder="0"></iframe>
     <div id="cotainer">

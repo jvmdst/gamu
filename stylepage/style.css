@@ -82,7 +82,7 @@
 .gameScreen {
     background-color: rgb(255, 255, 255);
     width: 40vh;
-    height: 30vh;
+    height: 23vh;
     position: absolute;
     top: 1vh;
     left: 2vh;
@@ -92,7 +92,7 @@
 
 .imageGame {
     width: 98.5%;
-    height: 22vh;
+    height: 97.5%;
     border-radius: 10px;
     border: 2px solid rgb(0, 0, 0);
 }
@@ -119,10 +119,12 @@
 
 .titleGame {
     position: absolute;
-    top: 19vh;
+    top: -4vh;
     font-size: 4.2vh;
-    color: rgb(0, 0, 0);
-    width: 100%;
+    color: rgb(255, 255, 255);
+    width: 90%;
+    background-color: rgb(0, 7, 70);
+    border-radius: 10px;
 }
 
 .GameFrameScreen {

@@ -26,7 +26,7 @@ function modMobileOn(){
 
     //arrumar tamanhos e posições
 
-    barTools.style = 'width: 90%; height: 7vh; left: 2.5vh; top: 90%;';
+    barTools.style = 'width: 90%; height: 8vh; left: 2.5vh; top: 90%;';
     container1.style = 'height: 88%; left: 3vh;';
     icon2.style = 'width: 15%; height: 7.5vh; top: 90%; left: 17%;';
     icon1.style = 'width: 16%; height: 8vh; top: 90%; left: 3%;';
