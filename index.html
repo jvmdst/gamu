@@ -8,11 +8,11 @@
     <title>Gamu</title>
 </head>
 <body class="bodyPage">
-    <div class="containerTypeGames">
+    <div id="containerTypeGames" class="containerTypeGames">
         <p class="xpViewText font1" id="LevelShowText"> xp:? local não encontrado </p>
         
-        <p class="untitle font1"> recomendados </p>
-        <div onpointerenter="onTouchMouse('cg1')" onpointerleave="unOnTouchMouse('cg1')" id="cg1" class="cotainerGames c1">
+        <p id="untitleJs" class="untitle font1"> recomendados </p>
+        <diV onpointerenter="onTouchMouse('cg1')" onpointerleave="unOnTouchMouse('cg1')" id="cg1" class="cotainerGames c1">
             <div id="gameScreen" class="gameScreen">
                 <input id="gameImage" onclick="location.href = 'https:/'+'/poki.com';" class="imageGame" type="image" src="https://a.poki-cdn.com/cdn-cgi/image/quality=78,width=1200,height=630,f=png/opengraph/71/categories/online-1200x630.png">
                 <p id="gameTitle" class="titleGame font1"> poki vários jogos </p>
@@ -27,7 +27,7 @@
             </div>
         </div>
 
-        <p class="untitle ut3 font1"> jogos de fps </p>
+        <p class="untitle ut3 font1" id="untitleGamesFps"> jogos de fps </p>
         <div id="cg3" onpointerenter="onTouchMouse('cg3')" onpointerleave="unOnTouchMouse('cg3')" class="cotainerGames c3">
             <div id="gameScreen3" class="gameScreen">
                 <input id="gameImage3" onclick="location.href = 'https:/'+'/crazygames.com';" class="imageGame" type="image" src="https://imgs.crazygames.com/crazygames/share.png?metadata=none&width=1200&height=630&fit=crop">
@@ -36,9 +36,9 @@
         </div>
     </div>
 
-    <div class="BarTools">
-        <input class="icon" type="image" onclick="location.href='index.html'" src="imagepage/iconPage.ico">
-        <input class="iconStore icon" type="image" onclick="location.href='store.html'" src="imagepage/localIcons/shopping_cart_103dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png">
+    <div id="BarTools" class="BarTools">
+        <input id="icon1" class="icon" type="image" onclick="location.href='index.html'" src="imagepage/iconPage.ico">
+        <input id="icon2" class="iconStore icon" type="image" onclick="location.href='store.html'" src="imagepage/localIcons/shopping_cart_103dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png">
     </div>
 </body>
 <script src="scriptpage/script.js"></script>

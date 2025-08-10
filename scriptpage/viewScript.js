@@ -1,6 +1,15 @@
 //pegar informações salvasS
 const localSave_1938 = localStorage.getItem('Key_10923', 'localSave-2x32sz');
 
+//verificar o dispositivo
+
+const userAgent = navigator.userAgent.toLowerCase();
+const isAndroid = userAgent.includes('android');
+const isIOS = /(iphone|ipad|ipod)/.test(userAgent);
+console.log(userAgent+'local_0288402883002:'+isAndroid+' '+isIOS);
+
+if(isIOS == true || isAndroid == true){alert('deixe o celular na horizontal ')};
+
 //verificação de informações salvas
 
 if(localSave_1938 == "null" || localSave_1938 == null){localStorage.setItem('Key_10923', 0)};

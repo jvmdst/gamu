@@ -182,13 +182,12 @@
 
 .containerTypeGames {
     overflow-y: scroll;
-    background-color: aquamarine;
+    background-color: rgb(37, 37, 37);
     position: absolute;
     width: 93%;
     height: 97%;
     left: 6%;
     border-radius: 10px;
-    background-image: url(../imagepage/pexels-daniela-elena-tentis-118658-370799.jpg);
     background-size: 100%;
 }
 

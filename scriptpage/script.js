@@ -1,13 +1,39 @@
+//pegar informações salvasS
+const localSave_1938 = localStorage.getItem('Key_10923', 'localSave-2x32sz');
+
 //verificar o dispositivo
 
 const userAgent = navigator.userAgent.toLowerCase();
 const isAndroid = userAgent.includes('android');
 const isIOS = /(iphone|ipad|ipod)/.test(userAgent);
 console.log(userAgent+'local_0288402883002:'+isAndroid+' '+isIOS);
-if(isIOS == true || isAndroid == true){if(confirm('desculpe mais foi verificado que você está usando o disppositivo online só falando que não tem suporte a tamanho de telas pequenas como os de celulares se ainda quer jogar aperte "ok"') === false){window.location.href = 'https://google.com';};}
 
-//pegar informações salvasS
-const localSave_1938 = localStorage.getItem('Key_10923', 'localSave-2x32sz');
+if(isIOS == true || isAndroid == true){modMobileOn()};
+
+function modMobileOn(){
+    window.innerWidth = '768px';
+    window.innerHeight = '414px ';
+
+    //definir objetos
+
+    const barTools = document.getElementById('BarTools');
+    const container1 = document.getElementById('containerTypeGames');
+    const icon2 = document.getElementById('icon2');
+    const icon1 = document.getElementById('icon1');
+    const TITL_tle1 = document.getElementById('untitleJs');
+    const TITL_tle2 = document.getElementById('GameTitleCont');
+    const TITL_tle3 = document.getElementById('untitleGamesFps');
+
+    //arrumar tamanhos e posições
+
+    barTools.style = 'width: 90%; height: 7vh; left: 2.5vh; top: 90%;';
+    container1.style = 'height: 88%; left: 3vh;';
+    icon2.style = 'width: 15%; height: 7.5vh; top: 90%; left: 17%;';
+    icon1.style = 'width: 16%; height: 8vh; top: 90%; left: 3%;';
+    TITL_tle1.style = 'font-size: 150%; top: 5%;';
+    TITL_tle2.style = 'font-size: 150%; top: 50.5%;';
+    TITL_tle3.style = 'font-size: 150%; top: 95.5%;';
+}
 
 //verificação de informações salvas
 
@@ -67,6 +93,9 @@ let cg3Cloud = [
     "https://imgs.crazygames.com/games/ev-io/cover_16x9-1702303918732.png?metadata=none&quality=100&width=1200&height=630&fit=crop<>ev fps game<>72Xi23",
     "https://imgs.crazygames.com/games/krunker-io/cover-1591336739727.png?metadata=none&quality=100&width=1200&height=630&fit=crop<>krunker<>3op093",
 ]
+
+//definir informações a mostras
+document.getElementById('GameTitleCont').textContent = cg2Cloud.length+' jogos'
 
 //listas que vão guardar os ids dos gameScreens clonados
 let listaDeGame = [];
@@ -168,8 +197,8 @@ function loopUpdateGame3(){
     //definir propiedades
     imageGame3.src = localInfo[0];
     titleGame3.textContent = localInfo[1];
-    imageGame3.setAttribute('onclick', "location.href ='view.html?id="+localInfo[2]+"'")
-    document.getElementById('cg3').append(newGame3)
+    imageGame3.setAttribute('onclick', "location.href ='view.html?id="+localInfo[2]+"'");
+    document.getElementById('cg3').append(newGame3);
     if(x3 >= 2){
         x3--
         y3++
