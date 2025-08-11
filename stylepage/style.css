@@ -52,6 +52,14 @@
     border-radius: 10px;
 }
 
+.TitleNameCreator {
+    color: white;
+    position: absolute;
+    left: 1%;
+    top: -3vh;
+    font-size: 150%; 
+}
+
 .gmViewTextGameView {
     color: white;
     position: absolute;
@@ -91,7 +99,7 @@
 }
 
 .imageGame {
-    width: 98.5%;
+    width: 99%;
     height: 97.5%;
     border-radius: 10px;
     border: 2px solid rgb(0, 0, 0);
@@ -119,7 +127,9 @@
 
 .titleGame {
     position: absolute;
-    top: 57%;
+    top: 57.5%;
+    left: -1%;
+    border: 1px solid white;
     font-size: 4.2vh;
     color: rgb(255, 255, 255);
     width: 90%;
@@ -199,4 +209,9 @@
     height: 1vh;
     left: 0%;
     width: 100%;
+}
+
+.iconDev {
+    top: 20%;
+    filter: invert(100%);
 }

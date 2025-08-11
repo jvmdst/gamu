@@ -58,6 +58,7 @@ const GameTitleCont = document.getElementById('GameTitleCont');
 //sarvar jogos publicado em uma ilha
 
 let cg1Cloud = [
+    "https://holeonline.io/data/image/posts/hole-io-online-banner1.jpg<>hole<>slIkmd",
     "https://skribbl.io/img/thumbnail.png<>skribbl<>0liJsok",
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOihOMFmw-9CxDqekl_hDLs0AoqWYujuOfEg&s<>worms zone<>89nJ23",
     "https://watchdocumentaries.com/wp-content/uploads/smash-karts-game.jpg<>smash karts<>2ax785",
@@ -86,6 +87,9 @@ let cg2Cloud = [
     "https://skribbl.io/img/thumbnail.png<>skribbl<>0liJsok",
     "https://img.gamepix.com/games/slow-roads-io/cover/slow-roads-io.png?w=400&ar=16:10<>slow roads<>liIjs15",
     "https://www.stumbleguys.com/og.jpg<>stumble guys - 📱❌ <>oiKmçp",
+    "https://iogames.onl/upload/imgs/mope.io.jpg<>mope<>oLkdioLks",
+    "https://cdn.titotu.io/images/games/lordz-io-1280x720.jpg<>Lordz<>>ai(dLox",
+    "https://holeonline.io/data/image/posts/hole-io-online-banner1.jpg<>hole<>slIkmd",
     "https://imgs.crazygames.com/paper-io-2_16x9/20250214024143/paper-io-2_16x9-cover?metadata=none&quality=100&width=1200&height=630&fit=crop<>paper io - 📱❌ <>gaIroa",
 ];
 

@@ -126,6 +126,9 @@ if(id == null){
     if(id == '20930lo'){screenGame.src = 'https://sllides.com/';};
     if(id == '0liJsok'){screenGame.src = 'https://skribbl.io/';};
     if(id == 'liIjs15'){screenGame.src = 'https://slowroads.io/';};
+    if(id == 'slIkmd'){screenGame.src = 'https://holeio.com/';};
+    if(id == 'oLkdioLks'){screenGame.src = 'https://Mope.io';};
+    if(id == '>ai(dLox'){screenGame.src = 'https://Lordz.io';};
     if(id == 'oiKmçp'){screenGame.src = 'https://www.stumbleguys.com/pt/play'; if(Mobile == true){alert(alertMobileSuport); window.location.href = 'index.html'}};
     if(id == 'gaIroa'){screenGame.src = 'https://paperio.site/'; if(Mobile == true){alert(alertMobileSuport); window.location.href = 'index.html'}};
 }if(id ===''){location.href='index.html'}
