@@ -129,6 +129,11 @@ if(id == null){
     if(id == 'slIkmd'){screenGame.src = 'https://holeio.com/';};
     if(id == 'oLkdioLks'){screenGame.src = 'https://Mope.io';};
     if(id == '>ai(dLox'){screenGame.src = 'https://Lordz.io';};
+    if(id == '>0(2.:;^s'){screenGame.src = 'https://yohoho.io/';};
+    if(id == ':;sçç,lsm'){screenGame.src = 'https://cryzen.io/play';};
+    if(id == 'LmKsLx02'){screenGame.src = 'https://minefun.io/';};
+    if(id == 'Mknslfj'){screenGame.src = 'https://vectaria.io/home';};
+    if(id == 'Loksmmk'){screenGame.src = 'https://defly.io/';};
     if(id == 'oiKmçp'){screenGame.src = 'https://www.stumbleguys.com/pt/play'; if(Mobile == true){alert(alertMobileSuport); window.location.href = 'index.html'}};
     if(id == 'gaIroa'){screenGame.src = 'https://paperio.site/'; if(Mobile == true){alert(alertMobileSuport); window.location.href = 'index.html'}};
 }if(id ===''){location.href='index.html'}
