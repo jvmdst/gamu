@@ -1,4 +1,14 @@
-//pegar informações salvasS
+// definir parametros de url//
+const paramsSearch = new URLSearchParams(location.search);
+let pesquisaLocal = paramsSearch.get('search');
+
+document.getElementById('inputSearch').addEventListener('change', function(event){
+    const pesquisa = document.getElementById('inputSearch').value;
+    console.log('o client pesquisou a palavra a seguir: '+pesquisa);
+    window.location.href = 'index.html?search='+pesquisa;
+});
+
+//pegar informações salvas
 const localSave_1938 = localStorage.getItem('Key_10923', 'localSave-2x32sz');
 
 //verificar o dispositivo
@@ -118,7 +128,7 @@ function TirarTelaDeLoad(){
     l2.remove();
 }
 
-setTimeout(TirarTelaDeLoad, '9000');
+setTimeout(TirarTelaDeLoad, cg2Cloud.length * 100);
 
 //definir informações a mostras
 document.getElementById('GameTitleCont').textContent = cg2Cloud.length+' jogos'
@@ -195,7 +205,20 @@ function loopUpdateGame2(){
     imageGame2.src = localInfo[0];
     titleGame2.textContent = localInfo[1];
     imageGame2.setAttribute('onclick', "if(confirm('quer entrar no "+localInfo[1]+"')){location.href ='view.html?id="+localInfo[2]+"'}")
-    document.getElementById('cg2').append(newGame2)
+    document.getElementById('cg2').append(newGame2);
+    if(pesquisaLocal){
+        document.getElementById('GameTitleCont').textContent = 'resultado da pesquisa'
+        const sdp = pesquisaLocal.split('');
+        console.log(sdp);
+        const lis = localInfo[1].split('');
+        if(sdp[0] == lis[0] && sdp[1] == lis[1] && sdp[2] == lis[2]){
+            console.log('ok '+localInfo[1]);
+        }else{
+            newGame2.remove();
+            i2 -= 42;
+        }
+    }
+
     if(x2 >= 2){
         x2--
         y2++
