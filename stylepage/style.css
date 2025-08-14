@@ -51,6 +51,16 @@
     font-size: 150%;
 }
 
+.UserImage {
+    border-radius: 100%;
+    width: 8vh;
+    height: 8vh;
+    border: 2px solid black;
+    position: absolute;
+    top: 30%;
+    left: 6%;
+}
+
 .xpViewTextStore {
     color: white;
     position: absolute;

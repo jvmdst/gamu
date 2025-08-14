@@ -1,3 +1,13 @@
+const login = localStorage.getItem('LoginPlayer');
+
+if(login){
+    console.log('você esta logado');
+}else{
+    if(confirm('Me desculpe, mas você não está registado. Não é obrigatório, mas seria o recomendado.') === true){
+        window.location.href = 'log-in.html';
+    }
+}
+
 // definir parametros de url//
 const paramsSearch = new URLSearchParams(location.search);
 let pesquisaLocal = paramsSearch.get('search');
@@ -7,6 +17,9 @@ document.getElementById('inputSearch').addEventListener('change', function(event
     console.log('o client pesquisou a palavra a seguir: '+pesquisa);
     window.location.href = 'index.html?search='+pesquisa;
 });
+
+const loginStats = login.split(":::");
+document.getElementById('creatorTxt').textContent = loginStats[0];
 
 //pegar informações salvas
 const localSave_1938 = localStorage.getItem('Key_10923', 'localSave-2x32sz');
