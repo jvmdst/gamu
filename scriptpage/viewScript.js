@@ -12,6 +12,7 @@ let Mobile = false
 if(isIOS == true || isAndroid == true){
     modMobileOn();
     Mobile = true;
+    document.getElementById('b3').remove();
 };
 
 function modMobileOn(){
@@ -50,6 +51,9 @@ function UpdateNewRecord(){
     localStorage.setItem('Key_10923', Number(localStorage.getItem('Key_10923', 'localSave-2x32sz')) + 50);
     const localSave_1938 = localStorage.getItem('Key_10923', 'localSave-2x32sz');
     document.getElementById('gmViewTextGameView').textContent = 'gm coin:'+localSave_1938;
+    if(Mobile == true){
+        document.getElementById('gmViewTextGameView').textContent = 'gm coin:'+localSave_1938+' | vire a tela';
+    }
     setTimeout(UpdateNewRecord, "1000"); //se você esta vendo este códego me desculpe mais não permitimos isto saia se  sabermos que você esta mexendo ou roubando códego nós vamos lhe abanir
 }
 UpdateNewRecord();
@@ -84,7 +88,10 @@ function fullScreen(){
 
         botaoRestart.remove();
     });
-    botaoRestart.src = 'imagepage/localIcons/close_fullscreen_103dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png'
+    botaoRestart.src = 'imagepage/localIcons/close_fullscreen_103dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png';
+    if(Mobile == true){
+        botaoRestart.remove();    
+    }
 }
 
 
@@ -97,11 +104,28 @@ function unfullScreen(){
     background-color: rgb(0, 1, 41);`  
 }
 
+function unfullScreenMobile(){
+    screenGame.style = 'width: 96%; left: 1vh; height: 32vh; top: 1%;';
+}
+
 //atalhos e teclas
 document.addEventListener('keydown', function(event){
     if(event.key === 'f' && tamanhoDeScreen == false){
         fullScreen();
         tamanhoDeScreen = true;
+    }
+});
+
+//verificar se mudou o eicho do celular
+screen.orientation.addEventListener('change', function(event){
+    if(screen.orientation.type.includes('landscape')){
+        fullScreen();
+    }else{
+        if(screen.orientation.type.includes('portrait')){
+            if( Mobile == true){
+                unfullScreenMobile();
+            }
+        }
     }
 });
 
