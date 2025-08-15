@@ -9,7 +9,7 @@ document.getElementById('buttonLogin').addEventListener('click', function(event)
     if(a2312.includes('✔') == true){
         alert('não pode colocar caractéries que apontão ao criador ou admin');
     }else{
-        const idPlayer = Math.floor(Math.random() * (10000000 - 0 + 1)) + 0;
+        const idPlayer = Math.floor(Math.random() * (100000000000000000 - 0 + 1)) + 0;
         localStorage.setItem('LoginPlayer', name+':::'+password+':::'+idPlayer);
         window.location.href = 'index.html';
     }
