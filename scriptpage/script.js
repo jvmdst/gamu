@@ -19,8 +19,10 @@ document.getElementById('inputSearch').addEventListener('change', function(event
 });
 
 const loginStats = login.split(":::");
-document.getElementById('creatorTxt').textContent = loginStats[0];
-
+document.getElementById('creatorTxt').textContent = loginStats[0]+' | '+loginStats[2];
+if(loginStats[0] == 'joão victor' && loginStats[2] == 2394728){
+    document.getElementById('creatorTxt').textContent = loginStats[0]+' ✔🔹 criador | '+loginStats[2];
+}
 //pegar informações salvas
 const localSave_1938 = localStorage.getItem('Key_10923', 'localSave-2x32sz');
 
@@ -141,7 +143,7 @@ function TirarTelaDeLoad(){
     l2.remove();
 }
 
-setTimeout(TirarTelaDeLoad, cg2Cloud.length * 100);
+setTimeout(TirarTelaDeLoad, 6000);
 
 //definir informações a mostras
 document.getElementById('GameTitleCont').textContent = cg2Cloud.length+' jogos'
@@ -174,8 +176,6 @@ let y3 = 0;
 let i = 44;
 let i2 = 44;
 let i3 = 44;
-
-//carregar jogos
 
 function loopUpdateGame(){
     const newGame = templateGame.cloneNode(true);
