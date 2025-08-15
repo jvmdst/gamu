@@ -20,7 +20,7 @@ document.getElementById('inputSearch').addEventListener('change', function(event
 
 const loginStats = login.split(":::");
 document.getElementById('creatorTxt').textContent = loginStats[0]+' | '+loginStats[2];
-if(loginStats[0] == 'joão victor' && loginStats[2] == 2394728){
+if(loginStats[0] == 'joão victor' && loginStats[2] == 8486537){
     document.getElementById('creatorTxt').textContent = loginStats[0]+' ✔🔹 criador | '+loginStats[2];
 }
 //pegar informações salvas
