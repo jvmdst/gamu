@@ -65,14 +65,7 @@ function modMobileOn(){
     const TITL_tle1 = document.getElementById('untitleJs');
     const TITL_tle2 = document.getElementById('GameTitleCont');
     const TITL_tle3 = document.getElementById('untitleGamesFps');
-    const l1 = document.getElementById('load1');
-    const l2 = document.getElementById('load2');
-    document.getElementById('creatorTxt').style = 'font-size: 100%; top: -2%';
-    document.getElementById('load2').setAttribute('style', 'width: 100%; height: 100%; position: fixed; left: 0%; top: 0%; background-color: rgb(0, 12, 51); background-size: 300%;')
-    document.getElementById('load2').style.backgroundPositionX = '30%';
-    document.getElementById('load1').style.fontSize = '170%';
-    document.getElementById('load1').style.height = '5%';
-    document.getElementById('load1').textContent = 'load...';
+    const TITL_tle4 = document.getElementById('creatorTxt');
 
     //arrumar tamanhos e posições
 
@@ -83,7 +76,8 @@ function modMobileOn(){
     TITL_tle1.style = 'font-size: 150%; top: 5%;';
     TITL_tle2.style = 'font-size: 150%; top: 50.5%;';
     TITL_tle3.style = 'font-size: 150%; top: 95.5%;';
-    l1.style.width = '30%';
+    TITL_tle4.style.fontSize = '130%';
+    TITL_tle4.style.top = '-2.8%';
 }
 
 //verificação de informações salvas

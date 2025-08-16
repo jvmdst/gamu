@@ -41,7 +41,7 @@ function modMobileOn(){
     barTools.style = 'width: 90%; height: 8vh; left: 2.5vh; top: 90%;';
     icon2.style = 'width: 15%; height: 7.5vh; top: 90%; left: 17%;';
     icon1.style = 'width: 16%; height: 8vh; top: 90%; left: 3%;';
-    TITL_tle1.style = 'top: 70%; font-size: 150%;';
+    TITL_tle1.style = 'top: 88%; font-size: 150%;';
     barGame.style = 'top: 80%; width: 90%; left: 2.5vh';
     b2.style = 'left: 10.5vh;';
     b3.style = 'left: 20vh;';
