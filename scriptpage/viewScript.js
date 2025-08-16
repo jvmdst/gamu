@@ -90,7 +90,7 @@ function fullScreen(){
         screenGame.style = `        position: absolute;
     width: 61%;
     height: 65%;
-    left: 0vh;
+    left: 15vh;
     top: 0vh;
     background-color: rgb(0, 1, 41);`}
 
