@@ -141,6 +141,9 @@ screen.orientation.addEventListener('change', function(event){
 
 let alertMobileSuport = 'desculpe mais o jogo selecionado não tem suporte a seu dispositivo :(';
 
+console.log("%csamos pessoas seguras e confiaveis!", "color: green; font-size: 20px; font-weight: bold;");
+
+
 if(id == null){
     location.href='index.html';
 }else{
@@ -162,7 +165,7 @@ if(id == null){
     if(idPreparado[0] == 'oLkdioLks'){screenGame.src = 'https://Mope.io';};
     if(idPreparado[0] == '>ai(dLox'){screenGame.src = 'https://Lordz.io';};
     if(idPreparado[0] == '>0(2.:;^s'){screenGame.src = 'https://yohoho.io/'; if(Mobile == true){alert(alertMobileSuport); window.location.href = 'index.html'}};
-    if(idPreparado[0] == ':;sçç,lsm'){screenGame.src = 'https://cryzen.io/play';};
+    if(idPreparado[0] == ':;sçç,lsm'){screenGame.src = 'https://cryzen.io/play';console.log("não escute isto que foi printado pelo jogo esta plataforma é segura e nunca roubaremos alguma informação tanto que o login é local e não global não podemos saber nem seu nome apenas seu id do site não dos jogos para caso de banimento do site caso faça algo de errado e o sistema saber quem você é.")};
     if(idPreparado[0] == 'LmKsLx02'){screenGame.src = 'https://minefun.io/';};
     if(idPreparado[0] == 'Mknslfj'){screenGame.src = 'https://vectaria.io/home';};
     if(idPreparado[0] == 'Loksmmk'){screenGame.src = 'https://defly.io/';};
