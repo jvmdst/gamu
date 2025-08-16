@@ -211,6 +211,11 @@
     top: 92%;
 }
 
+.loadScreen {
+    background-image: url(../imagepage/InicioScreen.png);
+    background-size: 100%;
+}
+
 .containerTypeGames {
     overflow-y: scroll;
     background-color: rgb(27, 27, 27);

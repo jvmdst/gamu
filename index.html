@@ -39,11 +39,11 @@
 
     <div id="BarTools" class="BarTools">
         <input id="icon1" class="icon" type="image" onclick="location.href='index.html'" src="imagepage/iconPage.ico">
-        <input id="icon2" class="iconStore icon" type="image" onclick="location.href='localStorage.clear();'" src="imagepage/localIcons/logout_103dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png">
+        <input id="icon2" class="iconStore icon" type="image" onclick="localStorage.clear(); window.location.href = ''" src="imagepage/localIcons/logout_103dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png">
     </div>
     <input id="inputSearch" type="search" placeholder="pesquisar jogo pelo primeiro nome" class="SearchGame font1">
-    <div id="load2" class="" style=" width: 100%; height: 100%; position: fixed; left: 0%; top: 0%; background-color: rgb(0, 12, 51);"></div>
-    <img id="load1" style="position: fixed; top: 0%;  width: 20%;" src="https://cdn.pixabay.com/animation/2024/04/02/07/57/07-57-40-974_512.gif">
+    <div id="load2" class="loadScreen" style="width: 100%; height: 100%; position: fixed; left: 0%; top: 0%; background-color: rgb(0, 12, 51);"></div>
+    <p id="load1" class="font1" style="position: fixed; left: 0%; top: 0%;  color: white; font-size: 260%; border-bottom-right-radius: 10px; border-top-right-radius: 10px; background-color: rgb(0, 21, 112);"> carregando... | user, games </p>
 </body>
 <script src="scriptpage/script.js"></script>
 </html>

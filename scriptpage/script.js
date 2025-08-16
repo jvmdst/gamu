@@ -50,6 +50,12 @@ function modMobileOn(){
     const TITL_tle3 = document.getElementById('untitleGamesFps');
     const l1 = document.getElementById('load1');
     const l2 = document.getElementById('load2');
+    document.getElementById('creatorTxt').style = 'font-size: 100%; top: -2%';
+    document.getElementById('load2').style.backgroundSize = '365%';
+    document.getElementById('load2').style.backgroundPositionX = '30%';
+    document.getElementById('load1').style.fontSize = '170%';
+    document.getElementById('load1').style.height = '5%';
+    document.getElementById('load1').textContent = 'load...';
 
     //arrumar tamanhos e posições
 
