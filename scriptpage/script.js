@@ -68,7 +68,7 @@ function modMobileOn(){
     const l1 = document.getElementById('load1');
     const l2 = document.getElementById('load2');
     document.getElementById('creatorTxt').style = 'font-size: 100%; top: -2%';
-    document.getElementById('load2').style.backgroundSize = '300%';
+    document.getElementById('load2').setAttribute('style', 'width: 100%; height: 100%; position: fixed; left: 0%; top: 0%; background-color: rgb(0, 12, 51); background-size: 300%;')
     document.getElementById('load2').style.backgroundPositionX = '30%';
     document.getElementById('load1').style.fontSize = '170%';
     document.getElementById('load1').style.height = '5%';
