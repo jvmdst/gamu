@@ -66,6 +66,8 @@ function modMobileOn(){
     const TITL_tle2 = document.getElementById('GameTitleCont');
     const TITL_tle3 = document.getElementById('untitleGamesFps');
     const TITL_tle4 = document.getElementById('creatorTxt');
+    const l2 = document.getElementById('load2');
+    const l1 = document.getElementById('load1');
 
     //arrumar tamanhos e posições
 
@@ -78,6 +80,11 @@ function modMobileOn(){
     TITL_tle3.style = 'font-size: 150%; top: 95.5%;';
     TITL_tle4.style.fontSize = '130%';
     TITL_tle4.style.top = '-2.8%';
+    l2.style.backgroundSize = '365.5%';
+    l2.style.backgroundPositionX = '60%';
+    l1.style.height = '5%';
+    l1.style.fontSize = '177%';
+    l1.textContent = 'load...';
 }
 
 //verificação de informações salvas
