@@ -31,7 +31,7 @@ function modMobileOn(){
     const b3 = document.getElementById('b3');
     const GFS = document.getElementById('GameFrameScreen');
     document.getElementById('NameGameText').style = `    position: absolute;
-    top: 25%;
+    top: 32%;
     left: 0%;
     font-size: 225%;
     color: white;`
