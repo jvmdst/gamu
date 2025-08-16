@@ -30,6 +30,11 @@ function modMobileOn(){
     const b2 = document.getElementById('b2');
     const b3 = document.getElementById('b3');
     const GFS = document.getElementById('GameFrameScreen');
+    document.getElementById('NameGameText').style = `    position: absolute;
+    top: 25%;
+    left: 0%;
+    font-size: 225%;
+    color: white;`
 
     //arrumar tamanhos e posições
 
@@ -40,7 +45,7 @@ function modMobileOn(){
     barGame.style = 'top: 80%; width: 90%; left: 2.5vh';
     b2.style = 'left: 10.5vh;';
     b3.style = 'left: 20vh;';
-    GFS.style = 'width: 96%; left: 1vh; height: 32vh; top: 1%;';
+    GFS.style = 'width: 100%; left: 0vh; height: 32vh; top: 0%; border-radius: 0px;';
 }
 
 //verificação de informações salvas
@@ -62,6 +67,9 @@ const searchParams = new URLSearchParams(location.search);
 const id = searchParams.get('id');
 const screenGame = document.getElementById('GameFrameScreen');
 
+const idPreparado = id.split(' | ');
+document.getElementById('NameGameText').textContent = idPreparado[1];
+
 let tamanhoDeScreen = false;
 
 function fullScreen(){
@@ -82,8 +90,8 @@ function fullScreen(){
         screenGame.style = `        position: absolute;
     width: 61%;
     height: 65%;
-    left: 15vh;
-    border-radius: 10px;
+    left: 0vh;
+    top: 0vh;
     background-color: rgb(0, 1, 41);`}
 
         botaoRestart.remove();
@@ -105,7 +113,7 @@ function unfullScreen(){
 }
 
 function unfullScreenMobile(){
-    screenGame.style = 'width: 96%; left: 1vh; height: 32vh; top: 1%;';
+    screenGame.style = 'width: 100%; left: 0vh; height: 32vh; top: 0%; border-radius: 0%;';
 }
 
 //atalhos e teclas
@@ -136,28 +144,28 @@ let alertMobileSuport = 'desculpe mais o jogo selecionado não tem suporte a seu
 if(id == null){
     location.href='index.html';
 }else{
-    if(id == '2ax785'){screenGame.src = 'https://smashkarts.io/';};
-    if(id == '3op093'){screenGame.src = 'https://krunker.io';};
-    if(id == '72Xi23'){screenGame.src = 'https://ev.io';};
-    if(id == '7Iox23'){screenGame.src = 'https://diep.io';};
-    if(id == '89nJ23'){screenGame.src = 'https://worms.zone/game/web/';};
-    if(id == '27ixo20'){screenGame.src = 'https://kirka.io/';};
-    if(id == '62ki309'){screenGame.src = 'https://nightpoint.io/';};
-    if(id == '789is2'){screenGame.src = 'https://r74n.com/cook/';};
-    if(id == '85ji02'){screenGame.src = 'https://sandboxels.r74n.com/';};
-    if(id == '10kj45'){screenGame.src = 'https://classic.minecraft.net/';};
-    if(id == '28lid3'){screenGame.src = 'https://2048game.com/pt/';};
-    if(id == '20930lo'){screenGame.src = 'https://sllides.com/';};
-    if(id == '0liJsok'){screenGame.src = 'https://skribbl.io/';};
-    if(id == 'liIjs15'){screenGame.src = 'https://slowroads.io/';};
-    if(id == 'slIkmd'){screenGame.src = 'https://holeio.com/';};
-    if(id == 'oLkdioLks'){screenGame.src = 'https://Mope.io';};
-    if(id == '>ai(dLox'){screenGame.src = 'https://Lordz.io';};
-    if(id == '>0(2.:;^s'){screenGame.src = 'https://yohoho.io/'; if(Mobile == true){alert(alertMobileSuport); window.location.href = 'index.html'}};
-    if(id == ':;sçç,lsm'){screenGame.src = 'https://cryzen.io/play';};
-    if(id == 'LmKsLx02'){screenGame.src = 'https://minefun.io/';};
-    if(id == 'Mknslfj'){screenGame.src = 'https://vectaria.io/home';};
-    if(id == 'Loksmmk'){screenGame.src = 'https://defly.io/';};
-    if(id == 'oiKmçp'){screenGame.src = 'https://www.stumbleguys.com/pt/play'; if(Mobile == true){alert(alertMobileSuport); window.location.href = 'index.html'}};
-    if(id == 'gaIroa'){screenGame.src = 'https://paperio.site/'; if(Mobile == true){alert(alertMobileSuport); window.location.href = 'index.html'}};
-}if(id ===''){location.href='index.html'}
+    if(idPreparado[0] == '2ax785'){screenGame.src = 'https://smashkarts.io/';};
+    if(idPreparado[0] == '3op093'){screenGame.src = 'https://krunker.io';};
+    if(idPreparado[0] == '72Xi23'){screenGame.src = 'https://ev.io';};
+    if(idPreparado[0] == '7Iox23'){screenGame.src = 'https://diep.io';};
+    if(idPreparado[0] == '89nJ23'){screenGame.src = 'https://worms.zone/game/web/';};
+    if(idPreparado[0] == '27ixo20'){screenGame.src = 'https://kirka.io/';};
+    if(idPreparado[0] == '62ki309'){screenGame.src = 'https://nightpoint.io/';};
+    if(idPreparado[0] == '789is2'){screenGame.src = 'https://r74n.com/cook/';};
+    if(idPreparado[0] == '85ji02'){screenGame.src = 'https://sandboxels.r74n.com/';};
+    if(idPreparado[0] == '10kj45'){screenGame.src = 'https://classic.minecraft.net/';};
+    if(idPreparado[0] == '28lid3'){screenGame.src = 'https://2048game.com/pt/';};
+    if(idPreparado[0] == '20930lo'){screenGame.src = 'https://sllides.com/';};
+    if(idPreparado[0] == '0liJsok'){screenGame.src = 'https://skribbl.io/';};
+    if(idPreparado[0] == 'liIjs15'){screenGame.src = 'https://slowroads.io/';};
+    if(idPreparado[0] == 'slIkmd'){screenGame.src = 'https://holeio.com/';};
+    if(idPreparado[0] == 'oLkdioLks'){screenGame.src = 'https://Mope.io';};
+    if(idPreparado[0] == '>ai(dLox'){screenGame.src = 'https://Lordz.io';};
+    if(idPreparado[0] == '>0(2.:;^s'){screenGame.src = 'https://yohoho.io/'; if(Mobile == true){alert(alertMobileSuport); window.location.href = 'index.html'}};
+    if(idPreparado[0] == ':;sçç,lsm'){screenGame.src = 'https://cryzen.io/play';};
+    if(idPreparado[0] == 'LmKsLx02'){screenGame.src = 'https://minefun.io/';};
+    if(idPreparado[0] == 'Mknslfj'){screenGame.src = 'https://vectaria.io/home';};
+    if(idPreparado[0] == 'Loksmmk'){screenGame.src = 'https://defly.io/';};
+    if(idPreparado[0] == 'oiKmçp'){screenGame.src = 'https://www.stumbleguys.com/pt/play'; if(Mobile == true){alert(alertMobileSuport); window.location.href = 'index.html'}};
+    if(idPreparado[0] == 'gaIroa'){screenGame.src = 'https://paperio.site/'; if(Mobile == true){alert(alertMobileSuport); window.location.href = 'index.html'}};
+}if(idPreparado ===''){location.href='index.html'}

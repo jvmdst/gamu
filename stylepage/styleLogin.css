@@ -17,6 +17,8 @@
 
 .BodyHome {
     background-image:linear-gradient(to right, rgb(0, 89, 255), white);
+    background-image: url(../imagepage/InicioScreen.png);
+    background-size: 100%;
 }
 
 .Log-inDisplay {

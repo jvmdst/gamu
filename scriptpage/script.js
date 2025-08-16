@@ -11,7 +11,12 @@ if(login){
 // definir parametros de url//
 const paramsSearch = new URLSearchParams(location.search);
 let pesquisaLocal = paramsSearch.get('search');
+let tp = paramsSearch.get('tp');
 
+if(tp == 'true'){
+    document.getElementById('load1').remove();
+    document.getElementById('load2').remove();
+}
 document.getElementById('inputSearch').addEventListener('change', function(event){
     const pesquisa = document.getElementById('inputSearch').value;
     console.log('o client pesquisou a palavra a seguir: '+pesquisa);
@@ -25,6 +30,18 @@ if(loginStats[0] == 'joão victor' && loginStats[2] == 8486537){
 }
 //pegar informações salvas
 const localSave_1938 = localStorage.getItem('Key_10923', 'localSave-2x32sz');
+
+//verificar user
+const listaDeBan = [
+]
+
+if(listaDeBan.includes(loginStats[2])){
+    if(confirm('você foi banido, quer tentar entrar novamente?') === true){
+        window.location.href = '';
+    }else{
+        window.location.href = 'https://google.com';
+    }
+}
 
 //verificar o dispositivo
 
@@ -195,7 +212,7 @@ function loopUpdateGame(){
     //definir propiedades
     imageGame.src = localInfo[0];
     titleGame.textContent = localInfo[1];
-    imageGame.setAttribute('onclick', "location.href ='view.html?id="+localInfo[2]+"'");
+    imageGame.setAttribute('onclick', "if(confirm('quer entrar no "+localInfo[1]+"')){location.href ='view.html?id="+localInfo[2]+" | "+localInfo[1]+"'}");
     document.getElementById('cg1').append(newGame)
     if(x >= 2){
         x--
@@ -221,7 +238,7 @@ function loopUpdateGame2(){
     //definir propiedades
     imageGame2.src = localInfo[0];
     titleGame2.textContent = localInfo[1];
-    imageGame2.setAttribute('onclick', "if(confirm('quer entrar no "+localInfo[1]+"')){location.href ='view.html?id="+localInfo[2]+"'}")
+    imageGame2.setAttribute('onclick', "if(confirm('quer entrar no "+localInfo[1]+"')){location.href ='view.html?id="+localInfo[2]+" | "+localInfo[1]+"'}");
     document.getElementById('cg2').append(newGame2);
     if(pesquisaLocal){
         document.getElementById('GameTitleCont').textContent = 'resultado da pesquisa'
@@ -263,7 +280,7 @@ function loopUpdateGame3(){
     //definir propiedades
     imageGame3.src = localInfo[0];
     titleGame3.textContent = localInfo[1];
-    imageGame3.setAttribute('onclick', "location.href ='view.html?id="+localInfo[2]+"'");
+    imageGame3.setAttribute('onclick', "if(confirm('quer entrar no "+localInfo[1]+"')){location.href ='view.html?id="+localInfo[2]+" | "+localInfo[1]+"'}")
     document.getElementById('cg3').append(newGame3);
     if(x3 >= 2){
         x3--

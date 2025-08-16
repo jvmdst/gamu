@@ -39,15 +39,12 @@
     left: 1vh;
     overflow-x: scroll;
     background-color: transparent;
-    border: 1px solid white;
-    border-top-right-radius: 10px; border-top-left-radius: 10px;
     display: flex;
 }
 
 .xpViewText {
     color: white;
     position: absolute;
-    left: 1%;
     font-size: 150%;
 }
 
@@ -214,6 +211,14 @@
 .loadScreen {
     background-image: url(../imagepage/InicioScreen.png);
     background-size: 100%;
+}
+
+.NameGameText {
+    position: absolute;
+    top: 75%;
+    left: 7%;
+    font-size: 200%;
+    color: white;
 }
 
 .containerTypeGames {

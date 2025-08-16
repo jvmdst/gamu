@@ -10,7 +10,7 @@ let Mobile = false
 if(isIOS == true || isAndroid == true){
     Mobile = true;
     document.getElementById('buttonLogin').style.width = '97%';
-    document.getElementById('log-display').style.height = '80%';
+    document.getElementById('log-display').style.height = '82%';
 };
 
 if(localStorage.getItem('LoginPlayer')){
