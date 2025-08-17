@@ -17,6 +17,10 @@ if(localStorage.getItem('LoginPlayer')){
     window.location.href = 'index.html';
 }
 
+document.getElementById('SelectL').addEventListener('change', function(event){
+    console.log(document.getElementById('SelectL').value);
+});
+
 document.getElementById('buttonLogin').addEventListener('click', function(event){
     const name = document.getElementById('i1').value;
     const password = document.getElementById('i2').value;
@@ -28,7 +32,7 @@ document.getElementById('buttonLogin').addEventListener('click', function(event)
             alert('o nome tem que te menos de 12 caractérie');
         }else{
             const idPlayer = Math.floor(Math.random() * (100000000000000000 - 10000000 + 1)) + 10000000;
-            localStorage.setItem('LoginPlayer', name+':::'+password+':::'+idPlayer);
+            localStorage.setItem('LoginPlayer', name+':::'+password+':::'+idPlayer+':::'+document.getElementById('SelectL').value+':::'+document.getElementById('inputDate').value);
             window.location.href = 'index.html';
         }
     }

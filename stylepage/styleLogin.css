@@ -17,7 +17,7 @@
 
 .BodyHome {
     background-image:linear-gradient(to right, rgb(0, 89, 255), white);
-    background-image: url(../imagepage/InicioScreen.png);
+    background-image: url(../imagepage/jogoOlineScreenStart.png);
     background-size: 100%;
 }
 
@@ -28,6 +28,20 @@
     height: 100%;
     top: 0px;
     left: 0px;
+}
+
+.SelectL {
+    position: relative;
+    top: 15%;
+    left: 4%;
+    border-radius: 10px;
+}
+
+.dateInput {
+    position: absolute;
+    top: 28.3%;
+    border-radius: 10px;
+    left: 57%;
 }
 
 .InputLogin {
