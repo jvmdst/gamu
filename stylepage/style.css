@@ -160,6 +160,8 @@
     left: 15vh;
     border-radius: 10px;
     background-color: rgb(0, 1, 41);
+    background-image: url(../imagepage/IconLOadGame.gif);
+    background-size: 100%;
 }
 
 .barGame {
