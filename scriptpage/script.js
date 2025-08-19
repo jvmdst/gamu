@@ -1,6 +1,15 @@
+function alertPlayGame(){
+    if(confirm('está indeciso? vamos jogar um dos melhores jogos da plataforma em pesquisas!') === true){
+        window.location.href = 'view.html?id=:;sçç,lsm%20|%20cryzen';
+        setTimeout(alertPlayGame, Math.floor(Math.random() * (50000 - 10000 + 1)) + 10000);
+    }
+}
+
+setTimeout(alertPlayGame, Math.floor(Math.random() * (50000 - 10000 + 1)) + 10000);
+
 const login = localStorage.getItem('LoginPlayer');
 
-if(login){
+if(login){  
     console.log('você esta logado');
 }else{
     if(confirm('Me desculpe, mas você não está registado. Não é obrigatório, mas seria o recomendado.') === true){

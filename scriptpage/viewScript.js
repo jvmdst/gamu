@@ -73,6 +73,7 @@ document.getElementById('NameGameText').textContent = idPreparado[1];
 let tamanhoDeScreen = false;
 
 function fullScreen(){
+    screenGame.requestFullscreen();
     screenGame.style = "left: 0vh; top: 0vh; width: 100%; height: 100%; position: fixed; border-radius: 0px;";
     const botaoRestart = document.createElement('input');
     botaoRestart.style = `    width: 8vh;
