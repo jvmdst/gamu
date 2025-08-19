@@ -147,6 +147,9 @@ console.log("%csamos pessoas seguras e confiaveis!", "color: green; font-size: 2
 if(id == null){
     location.href='index.html';
 }else{
+    if(idPreparado[0] == 'tst'){screenGame.src = 'https://games.crazygames.com/en_US/supermarket-simulator-cashier-game/index.html?v=1.338';};
+    if(idPreparado[0] == 'Mloi928'){screenGame.src = 'https://games.crazygames.com/en_US/space-waves/index.html?v=1.338';};
+    if(idPreparado[0] == 'LoGiovs'){screenGame.src = 'https://games.crazygames.com/en_US/block-puzzle-master/index.html?v=1.338';};
     if(idPreparado[0] == '2ax785'){screenGame.src = 'https://smashkarts.io/';};
     if(idPreparado[0] == '3op093'){screenGame.src = 'https://krunker.io';};
     if(idPreparado[0] == '72Xi23'){screenGame.src = 'https://ev.io';};
