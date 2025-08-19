@@ -2,10 +2,12 @@ function alertPlayGame(){
     if(confirm('está indeciso? vamos jogar um dos melhores jogos da plataforma em pesquisas!') === true){
         window.location.href = 'view.html?id=:;sçç,lsm%20|%20cryzen';
         setTimeout(alertPlayGame, Math.floor(Math.random() * (50000 - 10000 + 1)) + 10000);
+    }else{
+        alert('se você preferir pode desativar a opção do site te da alertas de tempos aleatórios, ok?');
     }
 }
 
-setTimeout(alertPlayGame, Math.floor(Math.random() * (50000 - 10000 + 1)) + 10000);
+setTimeout(alertPlayGame, Math.floor(Math.random() * (100000000 - 30000 + 1)) + 30000);
 
 const login = localStorage.getItem('LoginPlayer');
 

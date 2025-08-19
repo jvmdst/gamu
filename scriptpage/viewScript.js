@@ -35,6 +35,7 @@ function modMobileOn(){
     left: 0%;
     font-size: 225%;
     color: white;`
+    const buttonPlay = document.getElementById("GamePlayButton");
 
     //arrumar tamanhos e posições
 
@@ -46,6 +47,8 @@ function modMobileOn(){
     b2.style = 'left: 10.5vh;';
     b3.style = 'left: 20vh;';
     GFS.style = 'width: 100%; left: 0vh; height: 32vh; top: 0%; border-radius: 0px;';
+    buttonPlay.style.top = '12.5%';
+    buttonPlay.style.left = '16.5vh';
 }
 
 //verificação de informações salvas
@@ -144,35 +147,46 @@ let alertMobileSuport = 'desculpe mais o jogo selecionado não tem suporte a seu
 
 console.log("%csamos pessoas seguras e confiaveis!", "color: green; font-size: 20px; font-weight: bold;");
 
+function ButtonPlayDelete(){
+    document.getElementById('GamePlayButton').remove();
+}
 
-if(id == null){
-    location.href='index.html';
-}else{
-    if(idPreparado[0] == 'tst'){screenGame.src = 'https://games.crazygames.com/en_US/supermarket-simulator-cashier-game/index.html?v=1.338';};
-    if(idPreparado[0] == 'Mloi928'){screenGame.src = 'https://games.crazygames.com/en_US/space-waves/index.html?v=1.338';};
-    if(idPreparado[0] == 'LoGiovs'){screenGame.src = 'https://games.crazygames.com/en_US/block-puzzle-master/index.html?v=1.338';};
-    if(idPreparado[0] == '2ax785'){screenGame.src = 'https://smashkarts.io/';};
-    if(idPreparado[0] == '3op093'){screenGame.src = 'https://krunker.io';};
-    if(idPreparado[0] == '72Xi23'){screenGame.src = 'https://ev.io';};
-    if(idPreparado[0] == '7Iox23'){screenGame.src = 'https://diep.io';};
-    if(idPreparado[0] == '89nJ23'){screenGame.src = 'https://worms.zone/game/web/';};
-    if(idPreparado[0] == '27ixo20'){screenGame.src = 'https://kirka.io/';};
-    if(idPreparado[0] == '62ki309'){screenGame.src = 'https://nightpoint.io/';};
-    if(idPreparado[0] == '789is2'){screenGame.src = 'https://r74n.com/cook/';};
-    if(idPreparado[0] == '85ji02'){screenGame.src = 'https://sandboxels.r74n.com/';};
-    if(idPreparado[0] == '10kj45'){screenGame.src = 'https://classic.minecraft.net/';};
-    if(idPreparado[0] == '28lid3'){screenGame.src = 'https://2048game.com/pt/';};
-    if(idPreparado[0] == '20930lo'){screenGame.src = 'https://sllides.com/';};
-    if(idPreparado[0] == '0liJsok'){screenGame.src = 'https://skribbl.io/';};
-    if(idPreparado[0] == 'liIjs15'){screenGame.src = 'https://slowroads.io/';};
-    if(idPreparado[0] == 'slIkmd'){screenGame.src = 'https://holeio.com/';};
-    if(idPreparado[0] == 'oLkdioLks'){screenGame.src = 'https://Mope.io';};
-    if(idPreparado[0] == '>ai(dLox'){screenGame.src = 'https://Lordz.io';};
-    if(idPreparado[0] == '>0(2.:;^s'){screenGame.src = 'https://yohoho.io/'; if(Mobile == true){alert(alertMobileSuport); window.location.href = 'index.html'}};
-    if(idPreparado[0] == ':;sçç,lsm'){screenGame.src = 'https://cryzen.io/play';console.log("não escute isto que foi printado pelo jogo esta plataforma é segura e nunca roubaremos alguma informação tanto que o login é local e não global não podemos saber nem seu nome apenas seu id do site não dos jogos para caso de banimento do site caso faça algo de errado e o sistema saber quem você é.")};
-    if(idPreparado[0] == 'LmKsLx02'){screenGame.src = 'https://minefun.io/';};
-    if(idPreparado[0] == 'Mknslfj'){screenGame.src = 'https://vectaria.io/home';};
-    if(idPreparado[0] == 'Loksmmk'){screenGame.src = 'https://defly.io/';};
-    if(idPreparado[0] == 'oiKmçp'){screenGame.src = 'https://www.stumbleguys.com/pt/play'; if(Mobile == true){alert(alertMobileSuport); window.location.href = 'index.html'}};
-    if(idPreparado[0] == 'gaIroa'){screenGame.src = 'https://paperio.site/'; if(Mobile == true){alert(alertMobileSuport); window.location.href = 'index.html'}};
-}if(idPreparado ===''){location.href='index.html'}
+function PlayGame(){
+    setTimeout(ButtonPlayDelete, '200');
+    if(id == null){
+        location.href='index.html';
+    }else{
+        if(idPreparado[0] == 'tst'){screenGame.src = 'https://games.crazygames.com/en_US/supermarket-simulator-cashier-game/index.html?v=1.338';};
+        if(idPreparado[0] == 'Mloi928'){screenGame.src = 'https://games.crazygames.com/en_US/space-waves/index.html?v=1.338';};
+        if(idPreparado[0] == 'LoGiovs'){screenGame.src = 'https://games.crazygames.com/en_US/block-puzzle-master/index.html?v=1.338';};
+        if(idPreparado[0] == '2ax785'){screenGame.src = 'https://smashkarts.io/';};
+        if(idPreparado[0] == '3op093'){screenGame.src = 'https://krunker.io';};
+        if(idPreparado[0] == '72Xi23'){screenGame.src = 'https://ev.io';};
+        if(idPreparado[0] == '7Iox23'){screenGame.src = 'https://diep.io';};
+        if(idPreparado[0] == '89nJ23'){screenGame.src = 'https://worms.zone/game/web/';};
+        if(idPreparado[0] == '27ixo20'){screenGame.src = 'https://kirka.io/';};
+        if(idPreparado[0] == '62ki309'){screenGame.src = 'https://nightpoint.io/';};
+        if(idPreparado[0] == '789is2'){screenGame.src = 'https://r74n.com/cook/';};
+        if(idPreparado[0] == '85ji02'){screenGame.src = 'https://sandboxels.r74n.com/';};
+        if(idPreparado[0] == '10kj45'){screenGame.src = 'https://classic.minecraft.net/';};
+        if(idPreparado[0] == '28lid3'){screenGame.src = 'https://2048game.com/pt/';};
+        if(idPreparado[0] == '20930lo'){screenGame.src = 'https://sllides.com/';};
+        if(idPreparado[0] == '0liJsok'){screenGame.src = 'https://skribbl.io/';};
+        if(idPreparado[0] == 'liIjs15'){screenGame.src = 'https://slowroads.io/';};
+        if(idPreparado[0] == 'slIkmd'){screenGame.src = 'https://holeio.com/';};
+        if(idPreparado[0] == 'oLkdioLks'){screenGame.src = 'https://Mope.io';};
+        if(idPreparado[0] == '>ai(dLox'){screenGame.src = 'https://Lordz.io';};
+        if(idPreparado[0] == '>0(2.:;^s'){screenGame.src = 'https://yohoho.io/'; if(Mobile == true){alert(alertMobileSuport); window.location.href = 'index.html'}};
+        if(idPreparado[0] == ':;sçç,lsm'){screenGame.src = 'https://cryzen.io/play';console.log("não escute isto que foi printado pelo jogo esta plataforma é segura e nunca roubaremos alguma informação tanto que o login é local e não global não podemos saber nem seu nome apenas seu id do site não dos jogos para caso de banimento do site caso faça algo de errado e o sistema saber quem você é.")};
+        if(idPreparado[0] == 'LmKsLx02'){screenGame.src = 'https://minefun.io/';};
+        if(idPreparado[0] == 'Mknslfj'){screenGame.src = 'https://vectaria.io/home';};
+        if(idPreparado[0] == 'Loksmmk'){screenGame.src = 'https://defly.io/';};
+        if(idPreparado[0] == 'oiKmçp'){screenGame.src = 'https://www.stumbleguys.com/pt/play'; if(Mobile == true){alert(alertMobileSuport); window.location.href = 'index.html'}};
+        if(idPreparado[0] == 'gaIroa'){screenGame.src = 'https://paperio.site/'; if(Mobile == true){alert(alertMobileSuport); window.location.href = 'index.html'}};
+    }if(idPreparado ===''){location.href='index.html'}
+}
+
+document.getElementById('GamePlayButton').addEventListener('click', function(event){
+    document.getElementById('GamePlayButton').style.borderBottom = '3px green solid';
+    setTimeout(PlayGame(), '200');
+});
