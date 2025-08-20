@@ -107,13 +107,13 @@ if(localSave_1938 == "null" || localSave_1938 == null){localStorage.setItem('Key
 function UpdateNewRecord(){
     localStorage.setItem('Key_10923', Number(localStorage.getItem('Key_10923', 'localSave-2x32sz')) + 2);
     const localSave_1938 = localStorage.getItem('Key_10923', 'localSave-2x32sz');
-    document.getElementById('LevelShowText').textContent = 'gm coin:'+localSave_1938;
+    document.getElementById('LevelShowText').textContent = 'timer coin:'+localSave_1938;
     setTimeout(UpdateNewRecord, "1000"); //se você esta vendo este códego me desculpe mais não permitimos isto saia se  sabermos que você esta mexendo ou roubando códego nós vamos lhe abanir
 }
 UpdateNewRecord();
 
 //atualizar alguns textos
-document.getElementById('LevelShowText').textContent = 'gm coin:'+localSave_1938;
+document.getElementById('LevelShowText').textContent = 'timer coin:'+localSave_1938;
 
 const templateGame = document.getElementById('gameScreen');
 const templateGame2 = document.getElementById('gameScreen2');
