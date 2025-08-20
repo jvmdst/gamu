@@ -30,7 +30,7 @@ function modMobileOn(){
     const b2 = document.getElementById('b2');
     const b3 = document.getElementById('b3');
     const GFS = document.getElementById('GameFrameScreen');
-    document.getElementById('NameGameText').style = `    position: absolute;
+    document.getElementById('NameGameText').style = `    position: fixed;
     top: 32%;
     left: 0%;
     font-size: 225%;
@@ -91,7 +91,7 @@ function fullScreen(){
         screenGame.style = 'width: 96%; left: 1vh; height: 32vh; top: 1%;';
 
     if(Mobile == false){        tamanhoDeScreen = false;
-        screenGame.style = `        position: absolute;
+        screenGame.style = `        position: fixed;
     width: 61%;
     height: 65%;
     left: 15vh;
@@ -108,16 +108,18 @@ function fullScreen(){
 
 
 function unfullScreen(){
-    screenGame.style = `        position: absolute;
-    width: 61%;
-    height: 65%;
+    screenGame.style = `    position: fixed;
+    width: 61.2%;
+    height: 62vh;
     left: 15vh;
     border-radius: 10px;
-    background-color: rgb(0, 1, 41);`  
+    background-color: rgb(0, 1, 41);
+    background-image: url(../imagepage/gamuScreenPlayer.png);
+    background-size: 130%;`  
 }
 
 function unfullScreenMobile(){
-    screenGame.style = 'width: 100%; left: 0vh; height: 32vh; top: 0%; border-radius: 0%;';
+    screenGame.style = 'position: fixed; width: 100%; left: 0vh; height: 32vh; top: 0%; border-radius: 0px;';
 }
 
 //atalhos e teclas
@@ -136,6 +138,8 @@ screen.orientation.addEventListener('change', function(event){
         if(screen.orientation.type.includes('portrait')){
             if( Mobile == true){
                 unfullScreenMobile();
+                document.mozCancelFullScreen();
+                document.getElementById('GameFrameScreen').mozCancelFullScreen();
             }
         }
     }
@@ -145,7 +149,7 @@ screen.orientation.addEventListener('change', function(event){
 
 let alertMobileSuport = 'desculpe mais o jogo selecionado não tem suporte a seu dispositivo :(';
 
-console.log("%csamos pessoas seguras e confiaveis!", "color: green; font-size: 20px; font-weight: bold;");
+console.log("%c pare imediatamente você está em um lugar onde só é permitido developers caso descobrirmos que você está mudando valores e ativando funções sua conta sera banida!!!!", "color: red; font-size: 20px; font-weight: bold;");
 
 function ButtonPlayDelete(){
     document.getElementById('GamePlayButton').remove();
@@ -160,8 +164,10 @@ function PlayGame(){
         if(idPreparado[0] == 'Mloi928'){screenGame.src = 'https://games.crazygames.com/en_US/space-waves/index.html?v=1.338';};
         if(idPreparado[0] == 'LoGiovs'){screenGame.src = 'https://games.crazygames.com/en_US/block-puzzle-master/index.html?v=1.338';};
         if(idPreparado[0] == '2ax785'){screenGame.src = 'https://smashkarts.io/';};
+        if(idPreparado[0] == '23uMlkc'){screenGame.src = 'https://gobattle.io/';};
         if(idPreparado[0] == '3op093'){screenGame.src = 'https://krunker.io';};
         if(idPreparado[0] == '72Xi23'){screenGame.src = 'https://ev.io';};
+        if(idPreparado[0] == 'Likdcs'){screenGame.src = 'https://zombsroyale.io/';};
         if(idPreparado[0] == '7Iox23'){screenGame.src = 'https://diep.io';};
         if(idPreparado[0] == '89nJ23'){screenGame.src = 'https://worms.zone/game/web/';};
         if(idPreparado[0] == '27ixo20'){screenGame.src = 'https://kirka.io/';};
@@ -172,6 +178,8 @@ function PlayGame(){
         if(idPreparado[0] == '28lid3'){screenGame.src = 'https://2048game.com/pt/';};
         if(idPreparado[0] == '20930lo'){screenGame.src = 'https://sllides.com/';};
         if(idPreparado[0] == '0liJsok'){screenGame.src = 'https://skribbl.io/';};
+        if(idPreparado[0] == 'lodmmg'){screenGame.src = 'https://games.crazygames.com/pt_BR/traffic-rider-vvq/index.html?v=1.338';};
+        if(idPreparado[0] == '029387Lm'){screenGame.src = 'https://games.crazygames.com/en_US/count-masters-stickman-games/index.html?v=1.338';};
         if(idPreparado[0] == 'liIjs15'){screenGame.src = 'https://slowroads.io/';};
         if(idPreparado[0] == 'slIkmd'){screenGame.src = 'https://holeio.com/';};
         if(idPreparado[0] == 'oLkdioLks'){screenGame.src = 'https://Mope.io';};
