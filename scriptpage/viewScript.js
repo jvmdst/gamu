@@ -46,7 +46,7 @@ function modMobileOn(){
     barGame.style = 'top: 80%; width: 90%; left: 2.5vh';
     b2.style = 'left: 10.5vh;';
     b3.style = 'left: 20vh;';
-    GFS.style = 'width: 100%; left: 0vh; height: 32vh; top: 0%; border-radius: 0px;';
+    GFS.style = 'position: fixed; width: 100%; left: 0vh; height: 32vh; top: 0%; border-radius: 0px;';
     buttonPlay.style.top = '12.5%';
     buttonPlay.style.left = '16.5vh';
 }

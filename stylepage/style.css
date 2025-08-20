@@ -172,12 +172,12 @@
 
 .GameFrameScreen {
     position: absolute;
-    width: 61%;
-    height: 65%;
+    width: 130vh;
+    height: 110%;
     left: 15vh;
     border-radius: 10px;
     background-color: rgb(0, 1, 41);
-    background-image: url(imagepage/gamuGames.png);
+    background-image: url(../imagepage/gamuScreenPlayer.png);
     background-size: 130%;
 }
 
@@ -228,7 +228,7 @@
 }
 
 .loadScreen {
-    background-image: url(../imagepage/gamuGames.png);
+    background-image: url(../imagepage/gamuScreenPlayer.png);
     background-size: 100%;
 }
 

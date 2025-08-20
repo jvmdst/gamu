@@ -89,8 +89,8 @@ function modMobileOn(){
     TITL_tle1.style = 'font-size: 150%; top: 5%;';
     TITL_tle2.style = 'font-size: 150%; top: 50.5%;';
     TITL_tle3.style = 'font-size: 150%; top: 95.5%;';
-    TITL_tle4.style.fontSize = '130%';
-    TITL_tle4.style.top = '-2.8%';
+    TITL_tle4.style.fontSize = '110%';
+    TITL_tle4.style.top = '-4%';
     if(tp == null){
         l2.style.backgroundSize = '365.5%';
         l2.style.backgroundPositionX = '60%';
