@@ -32,8 +32,10 @@ document.getElementById('buttonLogin').addEventListener('click', function(event)
             alert('o nome tem que te menos de 12 caractérie');
         }else{
             const idPlayer = Math.floor(Math.random() * (100000000000000000 - 10000000 + 1)) + 10000000;
-            localStorage.setItem('LoginPlayer', name+':::'+password+':::'+idPlayer+':::'+document.getElementById('SelectL').value+':::'+document.getElementById('inputDate').value);
+            const dateNow = new Date();
+            localStorage.setItem('LoginPlayer', name+':::'+password+':::'+idPlayer+':::'+document.getElementById('SelectL').value+':::'+document.getElementById('inputDate').value+':::'+dateNow.getFullYear()+'-'+dateNow.getDay()+'-'+dateNow.getSeconds());
             window.location.href = 'index.html';
+            
         }
     }
 });
