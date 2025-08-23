@@ -1,10 +1,5 @@
 console.log("%c pare imediatamente você está em um lugar onde só é permitido developers caso descobrirmos que você está mudando valores e ativando funções sua conta sera banida!!!!", "color: red; font-size: 20px; font-weight: bold;");
 
-const Recompenca = localStorage.getItem('recompenca12092');
-if(Recompenca == null){
-    alert('temos mais de 30 jogos isto é uma meta da plataforma!🎉✨');
-}
-
 function alertPlayGame(){
     if(confirm('está indeciso? vamos jogar um dos melhores jogos da plataforma em pesquisas!') === true){
         window.location.href = 'view.html?id=:;sçç,lsm%20|%20cryzen';
@@ -329,3 +324,9 @@ document.addEventListener('keydown', function(event){
         document.getElementById('backgroundMusic').remove();
     }
 });
+
+//verificação
+
+console.log('___verificação de funções___')
+if(loginStats){console.log('login esta ok!')}
+if(listaDeBan){console.log('funcionalidade de banimento ok!')}

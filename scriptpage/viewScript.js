@@ -56,11 +56,11 @@ function modMobileOn(){
 if(localSave_1938 == "null" || localSave_1938 == null){localStorage.setItem('Key_10923', 0)};
 
 function UpdateNewRecord(){
-    localStorage.setItem('Key_10923', Number(localStorage.getItem('Key_10923', 'localSave-2x32sz')) + 50);
+    localStorage.setItem('Key_10923', Number(localStorage.getItem('Key_10923', 'localSave-2x32sz')) + 4);
     const localSave_1938 = localStorage.getItem('Key_10923', 'localSave-2x32sz');
-    document.getElementById('gmViewTextGameView').textContent = 'gm coin:'+localSave_1938;
+    document.getElementById('gmViewTextGameView').textContent = 'timer coin:'+localSave_1938;
     if(Mobile == true){
-        document.getElementById('gmViewTextGameView').textContent = 'gm coin:'+localSave_1938+' | vire a tela';
+        document.getElementById('gmViewTextGameView').textContent = 'timer coin:'+localSave_1938+' | vire a tela';
     }
     setTimeout(UpdateNewRecord, "1000"); //se você esta vendo este códego me desculpe mais não permitimos isto saia se  sabermos que você esta mexendo ou roubando códego nós vamos lhe abanir
 }

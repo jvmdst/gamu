@@ -10,17 +10,21 @@
 <body class="BodyHome">
     <div id="log-display" class="Log-inDisplay">
         <p class="loginText font1"> log-in </p>
-        <input id="i1" class="InputLogin il1  font1" placeholder="digite seu nome" type="text">
+        <input name="name"  id="i1" class="InputLogin il1  font1" placeholder="digite seu nome" type="text">
         <br>
-        <input id="i2" class="InputLogin il2  font1" placeholder="digite sua senha" type="password">
+        <input name="passworld" id="i2" class="InputLogin il2  font1" placeholder="digite sua senha" type="password">
         <br>
-        <select class="SelectL font1" value="" id="SelectL">
-            <option value="l-1"> português brasileiro </option>
+        <select name="ling" class="SelectL font1" value="" id="SelectL">
+            <option value="l-1"> português </option>
             <option value="l-2"> inglês </option>
+            <option value="l-3"> alemão </option>
+            <option value="l-4"> japonês </option>
+            <option value="l-5"> chines </option>
+            <option value="l-none"> outro... </option>
         </select>
-        <input class="dateInput font1" id="inputDate" value="" type="date">
+        <input name="dateNaciment" class="dateInput font1" id="inputDate" value="" type="date">
         <br>
-        <button id="buttonLogin" class="ButtonLogin font1"> registrar-se </button>
+        <button id="buttonLogin" class="ButtonLogin font1"> entrar </nutton>
     </div>
 </body>
 <script src="scriptpage/loginScript.js"></script>
