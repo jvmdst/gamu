@@ -149,7 +149,12 @@ screen.orientation.addEventListener('change', function(event){
 
 let alertMobileSuport = 'desculpe mais o jogo selecionado não tem suporte a seu dispositivo :(';
 
-console.log("%c pare imediatamente você está em um lugar onde só é permitido developers caso descobrirmos que você está mudando valores e ativando funções sua conta sera banida!!!!", "color: red; font-size: 20px; font-weight: bold;");
+console.log("%c pare imediatamente você está em um lugar onde só é permitido developers caso descobrirmos que você está mudando valores e ativando funções sua conta sera banida!!!!", `color: red; font-size: 20px; font-weight: bold;
+      font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;`);
 
 function ButtonPlayDelete(){
     document.getElementById('GamePlayButton').remove();

@@ -28,15 +28,15 @@ document.getElementById('buttonLogin').addEventListener('click', function(event)
         alert('o nome tem que ter mais de 3 caractéries');       
     }if(a2312.includes('{') || a2312.includes('}') || a2312.includes(':') || a2312.includes(';') || a2312.includes('`')){
         alert('seu nome não pode conter caractéries especias especificos!')
+    }
+    if(a2312.length >= 12){
+        alert('o nome tem que te menos de 12 caractérie');
+    }if(a2312.length == 0){
+        alert('desculpe esse nome é inapropriado na plataforma por tamanho muito pequeno de caractéries')
     }else{
-        if(a2312.length >= 12){
-            alert('o nome tem que te menos de 12 caractérie');
-        }else{
-            const idPlayer = Math.floor(Math.random() * (100000000000000000 - 10000000 + 1)) + 10000000;
-            const dateNow = new Date();
-            localStorage.setItem('LoginPlayer', name+':::'+password+':::'+idPlayer+'%'+dateNow.getFullYear()+dateNow.getDay()+dateNow.getSeconds()+':::'+document.getElementById('SelectL').value+':::'+document.getElementById('inputDate').value+':::'+dateNow.getFullYear()+'-'+dateNow.getDay()+'-'+dateNow.getSeconds());
-            window.location.href = 'index.html';
-            
-        }
+        const idPlayer = Math.floor(Math.random() * (100000000000000000 - 10000000 + 1)) + 10000000;
+        const dateNow = new Date();
+        localStorage.setItem('LoginPlayer', name+':::'+password+':::'+idPlayer+'%'+dateNow.getFullYear()+dateNow.getDay()+dateNow.getSeconds()+':::'+document.getElementById('SelectL').value+':::'+document.getElementById('inputDate').value+':::'+dateNow.getFullYear()+'-'+dateNow.getDay()+'-'+dateNow.getSeconds());
+        window.location.href = 'index.html';
     }
 });

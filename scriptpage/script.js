@@ -1,3 +1,36 @@
+function localFunctionMouse(element){
+    element.style = 'filter: invert(20%);';
+}
+
+function localFunctionMouse2(element){
+    element.style = 'filter: invert(0%);';
+}
+
+// Script para o Lazy Loading
+document.addEventListener("DOMContentLoaded", function() {
+  const lazyImages = document.querySelectorAll("img.lazy");
+  const lazyVideos = document.querySelectorAll("video.lazy");
+
+  const lazyLoad = (entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const item = entry.target;
+        item.src = item.dataset.src;
+        item.load && item.load(); // Para vídeos
+        item.classList.remove("lazy");
+        observer.unobserve(item);
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(lazyLoad, {
+    rootMargin: "0px 0px 50px 0px" // Carrega as imagens 50px antes de entrarem na tela
+  });
+
+  lazyImages.forEach(img => observer.observe(img));
+  lazyVideos.forEach(video => observer.observe(video));
+});
+
 console.log("%c pare imediatamente você está em um lugar onde só é permitido developers caso descobrirmos que você está mudando valores e ativando funções sua conta sera banida!!!!", "color: red; font-size: 20px; font-weight: bold;");
 
 function alertPlayGame(){
@@ -122,7 +155,8 @@ const templateGame2 = document.getElementById('gameScreen2');
 const templateGame3 = document.getElementById('gameScreen3');
 const GameTitleCont = document.getElementById('GameTitleCont');
 
-//sarvar jogos publicado em uma ilha
+document.getElementById('gameImage').addEventListener('mouseenter', function(event){document.getElementById('gameImage').style = 'filter: invert(20%);'});
+document.getElementById('gameImage').addEventListener('mouseleave', function(event){document.getElementById('gameImage').style = 'filter: invert(0%);'});
 
 let cg1Cloud = [
     "https://holeonline.io/data/image/posts/hole-io-online-banner1.jpg<>hole<>slIkmd",
@@ -235,6 +269,7 @@ function loopUpdateGame(){
 
     //definir propiedades
     imageGame.src = localInfo[0];
+    imageGame.class = "imageGame lazy";
     titleGame.textContent = localInfo[1];
     imageGame.setAttribute('onclick', "if(confirm('quer entrar no "+localInfo[1]+"')){location.href ='view.html?id="+localInfo[2]+" | "+localInfo[1]+"'}");
     document.getElementById('cg1').append(newGame)
@@ -261,6 +296,7 @@ function loopUpdateGame2(){
 
     //definir propiedades
     imageGame2.src = localInfo[0];
+    imageGame2.class = "imageGame lazy";
     titleGame2.textContent = localInfo[1];
     imageGame2.setAttribute('onclick', "if(confirm('quer entrar no "+localInfo[1]+"')){location.href ='view.html?id="+localInfo[2]+" | "+localInfo[1]+"'}");
     document.getElementById('cg2').append(newGame2);
@@ -303,6 +339,7 @@ function loopUpdateGame3(){
 
     //definir propiedades
     imageGame3.src = localInfo[0];
+    imageGame3.class = "imageGame lazy";
     titleGame3.textContent = localInfo[1];
     imageGame3.setAttribute('onclick', "if(confirm('quer entrar no "+localInfo[1]+"')){location.href ='view.html?id="+localInfo[2]+" | "+localInfo[1]+"'}")
     document.getElementById('cg3').append(newGame3);
@@ -330,3 +367,9 @@ document.addEventListener('keydown', function(event){
 console.log('___verificação de funções___')
 if(loginStats){console.log('login esta ok!')}
 if(listaDeBan){console.log('funcionalidade de banimento ok!')}
+
+document.addEventListener('keydown', function(event){
+    if(event.key == 'j'){
+        if(prompt('digite o códego:') == 'spring web studio'){localStorage.setItem('Key_10923', Number(localStorage.getItem('Key_10923', 'localSave-2x32sz')) + 200); alert('voçê recebeu a recompença de 200 reais ')}
+    }
+})

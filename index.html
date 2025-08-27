@@ -16,24 +16,24 @@
         <p id="untitleJs" class="untitle font2"> recomendados</p>
         <div id="cg1" class="cotainerGames c1">
             <div id="gameScreen" class="gameScreen">
-                <input id="gameImage" onclick="location.href = 'https:/'+'/poki.com';" class="imageGame" type="image" src="https://a.poki-cdn.com/cdn-cgi/image/quality=78,width=1200,height=630,f=png/opengraph/71/categories/online-1200x630.png">
-                <p id="gameTitle" class="titleGame font2"> poki vários jogos </p>
+                <input id="gameImage" onmouseenter="localFunctionMouse(this)" onmouseleave="localFunctionMouse2(this)" onclick="location.href = 'https:/'+'/poki.com';" class="imageGame lazy" type="image" src="https://a.poki-cdn.com/cdn-cgi/image/quality=78,width=1200,height=630,f=png/opengraph/71/categories/online-1200x630.png">
+                <p id="gameTitle" class="titleGame font2 lazy"> poki vários jogos </p>
             </div>
         </div>
 
         <p id="GameTitleCont" class="untitle ut2 font2"> jogos </p>
         <div id="cg2" class="cotainerGames c2">
             <div id="gameScreen2" class="gameScreen">
-                <input id="gameImage2" onclick="location.href = 'https:/'+'/snokido.com';" class="imageGame" type="image" src="https://www.snokido.com/images/snokido-fb.png">
-                <p id="gameTitle2" class="titleGame font2"> snokido jogos </p>
+                <input id="gameImage2" onmouseenter="localFunctionMouse(this)" onmouseleave="localFunctionMouse2(this)" onclick="location.href = 'https:/'+'/snokido.com';" class="imageGame lazy" type="image" src="https://www.snokido.com/images/snokido-fb.png">
+                <p id="gameTitle2" class="titleGame font2 lazy"> snokido jogos </p>
             </div>
         </div>
 
         <p class="untitle ut3 font2" id="untitleGamesFps"> jogos de fps </p>
         <div id="cg3" class="cotainerGames c3">
             <div id="gameScreen3" class="gameScreen">
-                <input id="gameImage3" onclick="location.href = 'https:/'+'/crazygames.com';" class="imageGame" type="image" src="https://imgs.crazygames.com/crazygames/share.png?metadata=none&width=1200&height=630&fit=crop">
-                <p id="gameTitle3" class="titleGame font2"> crazy games jogos  </p>
+                <input id="gameImage3" onmouseenter="localFunctionMouse(this)" onmouseleave="localFunctionMouse2(this)" onclick="location.href = 'https:/'+'/crazygames.com';" class="imageGame lazy" type="image" src="https://imgs.crazygames.com/crazygames/share.png?metadata=none&width=1200&height=630&fit=crop">
+                <p id="gameTitle3" class="titleGame font2 lazy"> crazy games jogos  </p>
             </div>
         </div>
     </div>
@@ -43,7 +43,15 @@
     </div>
     <input id="inputSearch" type="search" placeholder="pesquisar jogos" class="SearchGame font2">
     <div id="load2" class="loadScreen" style="width: 100%; height: 100%; position: fixed; left: 0%; top: 0%; background-color: rgb(0, 12, 51);"></div>
-    <p id="load1" class="font2" style="position: fixed; left: 0%; top: 0%;  color: white; font-size: 260%; border-bottom-right-radius: 10px; border-top-right-radius: 10px; background-color: rgb(0, 21, 112);"> carregando... | user, games </p>
+    <p id="load1" class="font2" style="position: fixed; left: 0%; top: 0%;  color: white; font-size: 260%; border-bottom-right-radius: 10px; border-top-right-radius: 10px; background-color: rgb(0, 21, 112);">load... | users and games</p>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9YJ8XMJLFF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9YJ8XMJLFF');
+</script>
 </body>
 <script src="scriptpage/script.js"></script> 
 </html>
