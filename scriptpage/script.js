@@ -252,9 +252,9 @@ let y = 0;
 let y2 = 0;
 let y3 = 0;
 
-let i = 44;
-let i2 = 44;
-let i3 = 44;
+let i = 38;
+let i2 = 38;
+let i3 = 38;
 
 function loopUpdateGame(){
     const newGame = templateGame.cloneNode(true);
@@ -276,7 +276,7 @@ function loopUpdateGame(){
     if(x >= 2){
         x--
         y++
-        i += 42;
+        i += 36;
         setTimeout(loopUpdateGame, '200');
     }else{setTimeout(clearConsole, '100000')}
 }
@@ -309,14 +309,14 @@ function loopUpdateGame2(){
             console.log('ok '+localInfo[1]);
         }else{
             newGame2.remove();
-            i2 -= 42;
+            i2 -= 36;
         }
     }
 
     if(x2 >= 2){
         x2--
         y2++
-        i2 += 42;
+        i2 += 36;
         setTimeout(loopUpdateGame2, '200');
     }else{setTimeout(clearConsole, '100000');}
 }
@@ -346,7 +346,7 @@ function loopUpdateGame3(){
     if(x3 >= 2){
         x3--
         y3++
-        i3 += 42;
+        i3 += 36;
         setTimeout(loopUpdateGame3, '200');
     }else{setTimeout(clearConsole, '100000');}
 }
@@ -372,4 +372,4 @@ document.addEventListener('keydown', function(event){
     if(event.key == 'j'){
         if(prompt('digite o códego:') == 'spring web studio'){localStorage.setItem('Key_10923', Number(localStorage.getItem('Key_10923', 'localSave-2x32sz')) + 200); alert('voçê recebeu a recompença de 200 reais ')}
     }
-})
+});

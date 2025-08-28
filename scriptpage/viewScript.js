@@ -200,6 +200,6 @@ function PlayGame(){
 }
 
 document.getElementById('GamePlayButton').addEventListener('click', function(event){
-    document.getElementById('GamePlayButton').style.borderBottom = '3px green solid';
+    document.getElementById('GamePlayButton').style.borderBottom = '3px rgb(0, 128, 0) solid';
     setTimeout(PlayGame(), '200');
 });

@@ -36,7 +36,7 @@ document.getElementById('buttonLogin').addEventListener('click', function(event)
     }else{
         const idPlayer = Math.floor(Math.random() * (100000000000000000 - 10000000 + 1)) + 10000000;
         const dateNow = new Date();
-        localStorage.setItem('LoginPlayer', name+':::'+password+':::'+idPlayer+'%'+dateNow.getFullYear()+dateNow.getDay()+dateNow.getSeconds()+':::'+document.getElementById('SelectL').value+':::'+document.getElementById('inputDate').value+':::'+dateNow.getFullYear()+'-'+dateNow.getDay()+'-'+dateNow.getSeconds());
+        localStorage.setItem('LoginPlayer', name+':::'+password+':::'+idPlayer+'%'+dateNow.getFullYear()+dateNow.getMonth()+(dateNow.getDay() + 4)+dateNow.getSeconds()+':::'+document.getElementById('SelectL').value+':::'+document.getElementById('inputDate').value+':::'+dateNow.getFullYear()+'-'+dateNow.getDay()+'-'+dateNow.getSeconds());
         window.location.href = 'index.html';
     }
 });

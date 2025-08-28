@@ -165,8 +165,8 @@
     font-size: large;
     font-weight: 600;
     border-radius: 10px;
-    border-bottom: 7px green solid;
-    background-color: lime;
+    border-bottom: 7px rgb(0, 128, 0) solid;
+    background-color: rgb(21, 255, 0);
     outline: none;
     border-radius: 10px;
 }
