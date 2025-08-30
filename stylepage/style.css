@@ -221,18 +221,18 @@
 
 .untitle {
     position: absolute;
-    top: 2vh;
+    top: 6vh;
     left: 0.5%;
     font-size: 6vh;
     color: white;
 }
 
 .ut2 {
-    top: 47%;
+    top: 50%;
 }
 
 .ut3 {
-    top: 92%;
+    top: 95%;
 }
 
 .loadScreen {

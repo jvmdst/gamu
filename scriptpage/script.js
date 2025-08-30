@@ -121,9 +121,9 @@ function modMobileOn(){
     container1.style = 'height: 88%; left: 1.7vh;';
     icon2.style = 'width: 15%; height: 7.5vh; top: 90%; left: 17%;';
     icon1.style = 'width: 16%; height: 8vh; top: 90%; left: 3%;';
-    TITL_tle1.style = 'font-size: 150%; top: 5%;';
-    TITL_tle2.style = 'font-size: 150%; top: 50.5%;';
-    TITL_tle3.style = 'font-size: 150%; top: 95.5%;';
+    TITL_tle1.style = 'font-size: 150%; top: 10%;';
+    TITL_tle2.style = 'font-size: 150%; top: 54.5%;';
+    TITL_tle3.style = 'font-size: 150%; top: 100.5%;';
     TITL_tle4.style.fontSize = '110%';
     TITL_tle4.style.top = '-4%';
     if(tp == null){
