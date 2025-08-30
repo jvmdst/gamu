@@ -79,12 +79,14 @@ function fullScreen(){
     screenGame.requestFullscreen();
     screenGame.style = "left: 0vh; top: 0vh; width: 100%; height: 100%; position: fixed; border-radius: 0px;";
     const botaoRestart = document.createElement('input');
-    botaoRestart.style = `    width: 8vh;
+    botaoRestart.style = `        width: 9vh;
     height: 8vh;
-    position: fixed;
-    background-color: rgb(0, 1, 49);
+    position: absolute;
+    top: 1vh;
+    left: 1vh;
+    background-color: rgb(0, 2, 119);
     border-radius: 10px;
-    border: 1px solid white;`
+    border-bottom: 6px solid rgb(0, 0, 78);`
     document.getElementById('cotainer').appendChild(botaoRestart);
     botaoRestart.type = 'image';
     botaoRestart.addEventListener('click', function(event){
@@ -165,11 +167,12 @@ function PlayGame(){
     if(id == null){
         location.href='index.html';
     }else{
-        if(idPreparado[0] == 'tst'){screenGame.src = 'https://games.crazygames.com/en_US/supermarket-simulator-cashier-game/index.html?v=1.338';};
+        if(idPreparado[0] == 'tst'){screenGame.src = '';};
         if(idPreparado[0] == 'Mloi928'){screenGame.src = 'https://games.crazygames.com/en_US/space-waves/index.html?v=1.338';};
         if(idPreparado[0] == 'LoGiovs'){screenGame.src = 'https://games.crazygames.com/en_US/block-puzzle-master/index.html?v=1.338';};
         if(idPreparado[0] == '2ax785'){screenGame.src = 'https://smashkarts.io/';};
         if(idPreparado[0] == '23uMlkc'){screenGame.src = 'https://gobattle.io/';};
+        if(idPreparado[0] == '2lOskms'){screenGame.src = 'https://taming.io/'; if(Mobile == true){alert(alertMobileSuport); window.location.href = 'index.html'}};
         if(idPreparado[0] == '3op093'){screenGame.src = 'https://krunker.io';};
         if(idPreparado[0] == '72Xi23'){screenGame.src = 'https://ev.io';};
         if(idPreparado[0] == 'Likdcs'){screenGame.src = 'https://zombsroyale.io/';};

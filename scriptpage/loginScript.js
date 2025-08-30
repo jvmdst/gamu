@@ -6,7 +6,7 @@ let Mobile = false
 
 if(isIOS == true || isAndroid == true){
     Mobile = true;
-    document.getElementById('buttonLogin').style.width = '97%';
+    document.getElementById('buttonLogin').style.width = '100%';
     document.getElementById('log-display').style.height = '82%';
 };
 
