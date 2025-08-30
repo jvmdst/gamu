@@ -96,8 +96,6 @@ const isAndroid = userAgent.includes('android');
 const isIOS = /(iphone|ipad|ipod)/.test(userAgent);
 console.log(userAgent+'local_0288402883002:'+isAndroid+' '+isIOS);
 
-if(isIOS == true || isAndroid == true){modMobileOn()};
-
 function modMobileOn(){
     window.innerWidth = '768px';
     window.innerHeight = '414px ';
@@ -121,10 +119,10 @@ function modMobileOn(){
     container1.style = 'height: 88%; left: 1.7vh;';
     icon2.style = 'width: 15%; height: 7.5vh; top: 90%; left: 17%;';
     icon1.style = 'width: 16%; height: 8vh; top: 90%; left: 3%;';
-    TITL_tle1.style = 'font-size: 150%; top: 10vh;';
-    TITL_tle2.style = 'font-size: 150%; top: 47vh;';
-    TITL_tle3.style = 'font-size: 150%; top: 85.5vh;';
-    TITL_tle4.style.fontSize = '110%';
+    TITL_tle1.remove();
+    TITL_tle2.remove();
+    TITL_tle3.remove()
+    TITL_tle4.style.fontSize = '100%';
     TITL_tle4.style.top = '-4%';
     if(tp == null){
         l2.style.backgroundSize = '365.5%';
@@ -223,10 +221,11 @@ function TirarTelaDeLoad(){
     }
 }
 
-setTimeout(TirarTelaDeLoad, 6000);
+if(isIOS == true || isAndroid == true){modMobileOn(); const Mobile = true}else{
+    document.getElementById('GameTitleCont').textContent = cg2Cloud.length+' jogos'
+};
 
-//definir informações a mostras
-document.getElementById('GameTitleCont').textContent = cg2Cloud.length+' jogos'
+setTimeout(TirarTelaDeLoad, 6000);
 
 //listas que vão guardar os ids dos gameScreens clonados
 let listaDeGame = [];
