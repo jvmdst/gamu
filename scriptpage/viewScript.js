@@ -42,7 +42,7 @@ function modMobileOn(){
     barTools.style = 'width: 90%; height: 8vh; left: 2.5vh; top: 90%;';
     icon2.style = 'width: 15%; height: 7.5vh; top: 90%; left: 17%;';
     icon1.style = 'width: 16%; height: 8vh; top: 90%; left: 3%;';
-    TITL_tle1.style = 'top: 88%; font-size: 150%;';
+    TITL_tle1.style = 'top: 60%; font-size: 150%;';
     barGame.style = 'top: 80%; width: 90%; left: 2.5vh';
     b2.style = 'left: 10.5vh;';
     b3.style = 'left: 20vh;';
@@ -179,10 +179,14 @@ function PlayGame(){
         if(idPreparado[0] == '7Iox23'){screenGame.src = 'https://diep.io';};
         if(idPreparado[0] == '89nJ23'){screenGame.src = 'https://worms.zone/game/web/';};
         if(idPreparado[0] == '27ixo20'){screenGame.src = 'https://kirka.io/';};
+        if(idPreparado[0] == 'ax23'){screenGame.src = 'https://rumblerush.io/';};
+        if(idPreparado[0] == 'ax46'){screenGame.src = 'https://snowball-io.io/';};
+        if(idPreparado[0] == 'ax92'){screenGame.src = 'https://supertanks.io/';};
         if(idPreparado[0] == '62ki309'){screenGame.src = 'https://nightpoint.io/';};
         if(idPreparado[0] == '789is2'){screenGame.src = 'https://r74n.com/cook/';};
         if(idPreparado[0] == '85ji02'){screenGame.src = 'https://sandboxels.r74n.com/';};
         if(idPreparado[0] == '10kj45'){screenGame.src = 'https://classic.minecraft.net/';};
+        if(idPreparado[0] == 'Xyaz'){screenGame.src = 'https://evoworld.io/';};
         if(idPreparado[0] == '28lid3'){screenGame.src = 'https://2048game.com/pt/';};
         if(idPreparado[0] == '20930lo'){screenGame.src = 'https://sllides.com/';};
         if(idPreparado[0] == '0liJsok'){screenGame.src = 'https://skribbl.io/';};
