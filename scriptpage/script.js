@@ -77,18 +77,6 @@ if(loginStats[0] == 'joão victor' && loginStats[2] == '8486537%202571013'){
 //pegar informações salvas
 const localSave_1938 = localStorage.getItem('Key_10923', 'localSave-2x32sz');
 
-//verificar user
-const listaDeBan = [
-]
-
-if(listaDeBan.includes(loginStats[2])){
-    if(confirm('você foi banido, quer tentar entrar novamente?') === true){
-        window.location.href = '';
-    }else{
-        window.location.href = 'https://google.com';
-    }
-}
-
 //verificar o dispositivo
 
 const userAgent = navigator.userAgent.toLowerCase();
@@ -370,7 +358,6 @@ document.addEventListener('keydown', function(event){
 
 console.log('___verificação de funções___')
 if(loginStats){console.log('login esta ok!')}
-if(listaDeBan){console.log('funcionalidade de banimento ok!')}
 
 document.addEventListener('keydown', function(event){
     if(event.key == 'j' && event.altKey){
@@ -380,7 +367,8 @@ document.addEventListener('keydown', function(event){
     }
     if(event.key == 'e' && event.altKey){
         if(confirm('voçê é um adiministrador') == true){
-            if(prompt('que admin voçê é? digite seu primeiro nome!') == 'joao2140'){
+            const CodeAdmin = prompt('que admin voçê é? digite seu primeiro nome!');
+            if(CodeAdmin == 'joao2140'){
                 alert('alterando registro...');
                 localStorage.setItem('LoginPlayer', 'joão victor:::j14:::8486537%202571013:::l-1:::2014-08-03:::2025-6-13');
             }
