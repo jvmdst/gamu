@@ -31,6 +31,25 @@
     border-radius: 10px;
 }
 
+.CotainerLoadDDisplay {
+    position: fixed;
+    background-color: #0044ff;
+    width: 60vh;
+    height: 30vh;
+    border-radius: 10px;
+    text-align: center;
+    background-image: url(../imagepage/gamuScreenPlayer.png);
+    background-size: 100%;
+    left: 35%;
+    top: 30vh;
+}
+
+.TitleLoadDisplay {
+    color: white;
+    background-color: rgb(31, 31, 31);
+    border-radius: 5px;
+}
+
 .cotainerGames {
     position: absolute;
     width: 99%;
@@ -39,6 +58,11 @@
     overflow-x: scroll;
     background-color: transparent;
     display: flex;
+}
+
+.IconPageLocalDisplayLoad {
+    width: 15vh;
+    height: 15vh;
 }
 
 .xpViewText {

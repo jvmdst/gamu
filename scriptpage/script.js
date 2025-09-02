@@ -42,7 +42,7 @@ function alertPlayGame(){
     }
 }
 
-setTimeout(alertPlayGame, Math.floor(Math.random() * (100000000 - 30000 + 1)) + 30000);
+setTimeout(alertPlayGame, Math.floor(Math.random() * (1000000 - 30000 + 1)) + 30000);
 
 const login = localStorage.getItem('LoginPlayer');
 
@@ -98,8 +98,7 @@ function modMobileOn(){
     const TITL_tle2 = document.getElementById('GameTitleCont');
     const TITL_tle3 = document.getElementById('untitleGamesFps');
     const TITL_tle4 = document.getElementById('creatorTxt');
-    const l2 = document.getElementById('load2');
-    const l1 = document.getElementById('load1');
+    const div = document.getElementById('DocumentLoadScreen')
 
     //arrumar tamanhos e posições
 
@@ -112,13 +111,8 @@ function modMobileOn(){
     TITL_tle3.remove()
     TITL_tle4.style.fontSize = '100%';
     TITL_tle4.style.top = '-4%';
-    if(tp == null){
-        l2.style.backgroundSize = '365.5%';
-        l2.style.backgroundPositionX = '60%';
-        l1.style.height = '5%';
-        l1.style.fontSize = '177%';
-        l1.textContent = 'load...';
-    }
+    div.style.width = '96%';
+    div.style.left = '2%'
 }
 
 //verificação de informações salvas
@@ -128,7 +122,7 @@ if(localSave_1938 == "null" || localSave_1938 == null){localStorage.setItem('Key
 function UpdateNewRecord(){
     localStorage.setItem('Key_10923', Number(localStorage.getItem('Key_10923', 'localSave-2x32sz')) + 2);
     const localSave_1938 = localStorage.getItem('Key_10923', 'localSave-2x32sz');
-    document.getElementById('LevelShowText').textContent = 'timer coin:'+localSave_1938;
+    document.getElementById('LevelShowText').textContent = 'timer coin:'+localSave_1938+' | nivel:'+localSave_1938 / 4;
     setTimeout(UpdateNewRecord, "1000"); //se você esta vendo este códego me desculpe mais não permitimos isto saia se  sabermos que você esta mexendo ou roubando códego nós vamos lhe abanir
 }
 UpdateNewRecord();
@@ -204,20 +198,9 @@ let cg3Cloud = [
     "https://imgs.crazygames.com/games/krunker-io/cover-1591336739727.png?metadata=none&quality=100&width=1200&height=630&fit=crop<>krunker<>3op093",
 ]
 
-function TirarTelaDeLoad(){
-    if(!tp == true){
-        const l1 = document.getElementById('load1');
-        const l2 = document.getElementById('load2');
-        l1.remove();
-        l2.remove();
-    }
-}
-
 if(isIOS == true || isAndroid == true){modMobileOn(); const Mobile = true}else{
     document.getElementById('GameTitleCont').textContent = cg2Cloud.length+' jogos'
 };
-
-setTimeout(TirarTelaDeLoad, 2000);
 
 //listas que vão guardar os ids dos gameScreens clonados
 let listaDeGame = [];
@@ -232,6 +215,13 @@ function onTouchMouse(idElement){
 function unOnTouchMouse(idElement){
     document.getElementById(idElement).style = "border: 1px solid white";
 }
+
+function deleteScreenLoad(){
+    document.getElementById('DocumentLoadScreen').remove();
+    document.getElementById('BackgroundLoad').remove();
+}
+
+setTimeout(deleteScreenLoad, (cg2Cloud.length * 120));
 
 //valores inportantes para a duplicação dos gameScreens
 
